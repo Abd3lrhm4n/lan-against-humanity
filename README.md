@@ -39,6 +39,11 @@ It also contains a `settings.json` file that contains the server settings. See b
 
 After building, run LahServer.exe to start the server.
 
+### Firewall settings
+
+Your firewall settings may prevent the game from working properly.
+Make sure that TCP port 80 (or whatever port you set in the host URL) as well as TCP port 3000 are whitelisted for the server.
+
 ### Configuring settings.json
 
 The settings.json file contains a number of properties that control how the server and game behave.

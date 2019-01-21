@@ -1,0 +1,157 @@
+{
+    "name": "LAH",
+    "trophies": [
+        {
+            "id": "trophy_nazi",
+            "name": {
+                "en-US": "Probably a Nazi",
+                "de-DE": "Wahrscheinlich ein Nazi"
+            },
+            "desc": {
+                "en-US": "This person is, with overwhelming likelihood, probably a Nazi.",
+                "de-DE": "Diese Person ist, mit überwältigender Sicherheit, wahrscheinlich ein Nazi."
+            },
+            "requirements": [
+                {
+                    "type": "card_proportion",
+                    "flags": ["as"],
+                    "winning": false,
+                    "percent": 30
+                }
+            ]
+        },
+        {
+            "id": "trophy_childhate",
+            "name": {
+                "en-US": "Child Hater",
+                "de-DE": "Kinderhasser"
+            },
+            "desc": {
+                "en-US": "Should never have children. Ever.",
+                "de-DE": "Sollte nie Kinder haben. Niemals."
+            },
+            "requirements": [
+                {
+                    "type": "card_proportion",
+                    "flags": ["ch a", "ch_cr"],
+                    "winning": false,
+                    "percent": 20
+                }
+            ]
+        },
+        {
+            "id": "trophy_dick1",
+            "name": {
+                "en-US": "Cocky",
+                "de-DE": "Schwanzig"
+            },
+            "desc": {
+                "en-US": "Likes talking about dicks, perhaps a bit too much.",
+                "de-DE": "Redet gern über Penisse... vielleicht ein bisschen zu gern."
+            },
+            "requirements": [
+                {
+                    "type": "card_proportion",
+                    "flags": ["gnm"],
+                    "winning": false,
+                    "percent": 20
+                }
+            ]
+        },
+        {
+            "id": "trophy_dick2",
+            "name": {
+                "en-US": "Penis Connoisseur",
+                "de-DE": "Penisliebhaber"
+            },
+            "desc": {
+                "en-US": "Absolutely obsessed with the male genitals.",
+                "de-DE": "Total Penisbesessen."
+            },
+            "requirements": [
+                {
+                    "type": "card_proportion",
+                    "flags": ["gnm"],
+                    "winning": true,
+                    "percent": 40
+                }
+            ]
+        },
+        {
+            "id": "trophy_dick3",
+            "name": {
+                "en-US": "Penis Veteran",
+                "de-DE": "Penisexperte"
+            },
+            "desc": {
+                "en-US": "A seasoned veteran of cock.",
+                "de-DE": "Ein erfahrener Fachmann des Penis."
+            },
+            "requirements": [
+                {
+                    "type": "card_proportion",
+                    "flags": ["gnm"],
+                    "winning": true,
+                    "percent": 60
+                }
+            ]
+        },
+        {
+            "id": "trophy_dick4",
+            "name": {
+                "en-US": "Grandmaster of the Golden Phallus",
+                "de-DE": "Großmeister des goldenen Phallus"
+            },
+            "desc": {
+                "en-US": "Awarded only to a true master of dick jokes. Truly the highest honor anyone can ever receive.",
+                "de-DE": "Nur an den wahren Meistern der Schwanzwitze verliehen. Wahrlich die höchste Ehre, die man je erhalten kann."
+            },
+            "requirements": [
+                {
+                    "type": "card_proportion",
+                    "flags": ["gnm"],
+                    "winning": true,
+                    "percent": 75
+                }
+            ]
+        },
+        {
+            "id": "trophy_loosecannon",
+            "name": {
+                "en-US": "Loose Cannon",
+                "de-DE": "Tickende Zeitbombe"
+            },
+            "desc": {
+                "en-US": "Likely to end up on the news.",
+                "de-DE": "Wird wahrscheinlich in den Nachrichten landen."
+            },
+            "requirements": [
+                {
+                    "type": "card_proportion",
+                    "flags": ["v", "t"],
+                    "winning": false,
+                    "percent": 30
+                }
+            ]
+        },
+        {
+            "id": "trophy_gross",
+            "name": {
+                "en-US": "Disgusting Motherfucker",
+                "de-DE": "Verdammt Ekelhaft"
+            },
+            "desc": {
+                "en-US": "What the fuck is wrong with you?",
+                "de-DE": "Was zur Hölle ist los mit dir?"
+            },
+            "requirements": [
+                {
+                    "type": "card_proportion",
+                    "flags": ["g"],
+                    "winning": true,
+                    "percent": 30
+                }
+            ]
+        }
+    ]
+}

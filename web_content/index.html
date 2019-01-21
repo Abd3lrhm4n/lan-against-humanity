@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <meta name="theme-color" content="black" />
+    <meta name="msapplication-navbutton-color" content="black">
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="stylesheet" type="text/css" href="css/lah-common.css" />
+    <link rel="stylesheet" type="text/css" href="css/lah-desktop.css" />
+    <link rel="stylesheet" type="text/css" href="css/lah-mobile.css" />
+    <title>LAN Against Humanity</title>
+    <script src="js/js-cookie.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/common-ui.js" defer></script>
+    <script src="js/lah-ui.js" defer></script>
+    <script src="js/lah-ws.js"></script>
+    <script src="js/lah.js"></script>
+</head>
+
+<body onload="lah.start()" class="preload">
+    <nav id="navbar" class="mobile-hidden">
+        <h1 class="mobile-only nav-header">Menu</h1>
+        <input type="button" value="Options" id="btn-options" class="lah-btn lah-btn-small" onclick="showModal('modal-options')" />
+        <input type="button" value="Players" id="btn-players" class="lah-btn lah-btn-small" onclick="togglePlayerList()" />
+        <input type="button" value="Fullscreen" id="btn-fullscreen" class="lah-btn lah-btn-small" />
+    </nav>
+    <div id="btn-mobile-nav" class="mobile-btn-menu" onclick="toggleMobileNav()"></div>
+    <div id="game">
+        <div id="black-card-area"></div>
+        <div id="status-area">
+            <span id="status"></span>
+        </div>
+        <div id="score-area">
+            <div>
+                <span class="icon-score"></span><span id="score-text">1</span>
+            </div>
+        </div>
+        <div id="judge-message-area">
+            <span id="judge-message-body"></span>
+        </div>
+        <div id="judge-caption-area">
+            <span id="judge-caption"></span>
+        </div>
+        <div id="judge-status-card-area">
+            <div id="judge-status-card">
+                <span id="judge-status-card-text"></span>
+            </div>
+        </div>
+        <div id="play-area">
+            <div class="lah-card-area">
+                <div id="play-cards-scroll-area" class="lah-card-container-outer">
+                    <div id="play-cards-area" class="lah-card-container-inner"></div>
+                </div>
+            </div>
+            <div id="judge-controls-area">
+                <input type="button" value="VOTE" id="btn-judge-pick" class="lah-btn" />
+            </div>
+        </div>
+        <div id="hand-area">            
+            <div id="hand-cards-area" class="lah-card-area">
+                <div id="hand-cards-scroll-area" class="lah-card-container-outer">
+                    <div id="hand-cards-container" class="lah-card-container-inner"></div>
+                </div>
+            </div>
+            <div id="hand-controls-area">
+                    <input type="button" value="PLAY" id="btn-play" class="lah-btn hidden" />
+            </div>
+        </div>
+        <div id="notify-banner" class="fade hidden">
+            <span id="notify-banner-text">You're the Czar.</span>
+        </div>
+    </div>
+    <div id="modal-no-ws" class="modal hidden">
+        <div class="modal-dialog">
+            <h1>Hold it right there, partner.</h1>
+            <p>
+                Your browser doesn't appear to support WebSockets, which are required in order for this game to
+                function, like, at all.
+                Try upgrading to a better browser. Or just give up, I can't tell you what to do.
+            </p>
+        </div>
+    </div>
+    <div id="modal-options" class="modal hidden">
+        <div class="modal-dialog">
+            <div class="modal-nav">
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <h1>Options</h1>
+                <div class="lah-vlist">
+                    <div class="lah-listitem">
+                        <label class="lah-label">Nickname</label>
+                        <input type="text" id="txt-username" class="lah-txtbox wide" placeholder="Who are you?"
+                            autocomplete="off" />
+                    </div>
+                    <div class="lah-separator"></div>
+                    <div class="lah-listitem">
+                        <div class="lah-hlist lah-align-end">
+                            <input type="button" class="lah-btn lah-btn-small" value="Apply" id="btn-options-apply"
+                                onclick="applyOptions()" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

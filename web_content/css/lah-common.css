@@ -1,0 +1,197 @@
+:root {
+    --placeholder-color: #999;
+    --modal-nav-height: 24pt;
+}
+
+::-webkit-input-placeholder {
+    /* WebKit, Blink, Edge */
+    color: var(--placeholder-color);
+}
+
+:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: var(--placeholder-color);
+    opacity: 1;
+}
+
+::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: var(--placeholder-color);
+    opacity: 1;
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: var(--placeholder-color);
+}
+
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: var(--placeholder-color);
+}
+
+::placeholder {
+    /* Most modern browsers support this now. */
+    color: var(--placeholder-color);
+}
+
+* {
+    font-family: "Helvetica", sans-serif !important;
+    font-weight: 700;
+}
+
+#score-area {
+    display: none !important;
+}
+
+.icon-score {
+    display: inline-block;
+    background-image: url(/img/lah-score-icon.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: .9em;
+    height: .9em;
+}
+
+.disabled {
+    opacity: .35;
+    pointer-events: none;
+}
+
+.preload :not(.allow-load-transitions) {
+    -o-transition: none !important;
+    -ms-transition: none !important;
+    -webkit-transition: none !important;
+    transition: none !important;
+}
+
+.hidden:not(.fade) {
+    display: none !important;
+    pointer-events: none;
+    opacity: 0;
+}
+
+.card-group {
+    display: flex;
+    flex-grow: 0;
+    background: #bbb;
+    padding: 3pt;
+    margin: 0 4pt;
+    border-radius: 8pt;
+}
+
+i.arrow-left {
+    display: inline-block;
+    height: 0;
+    border-top: .5em solid transparent;
+    border-bottom: .5em solid transparent;
+    border-right: .5em solid black;
+}
+
+i.arrow-right {
+    display: inline-block;
+    height: 0;
+    border-top: .5em solid transparent;
+    border-bottom: .5em solid transparent;
+    border-left: .5em solid black;
+}
+
+card {
+    box-sizing: content-box;
+}
+
+span.highlight {
+    color: #094;
+}
+
+.lah-card-area {
+    position: relative;
+    display: flex;
+    max-width: 100%;
+    width: 100%;
+}
+
+.lah-card-container-outer {
+    margin: auto;
+    max-width: 100%;
+    height: 100%;
+    display: flex;
+    overflow-x: auto;
+}
+
+.lah-card-container-inner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.lah-card-container-inner > * {
+    flex: none;
+}
+
+@keyframes rumble {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(0, -3pt);
+    }
+}
+
+
+@keyframes tilt {
+    0% {
+        transform: rotate(-1.1deg);
+    }
+    100% {
+        transform: rotate(1.1deg);
+    }
+}
+
+.lah-stage-round-end #play-cards-area .card-group.winner {
+    animation: win-spin .9s 
+}
+
+@keyframes win-spin {
+    0% {
+        opacity: 0;
+        transform: rotate(0deg) scale(.5);
+        animation-timing-function: ease-in-out;
+    }
+
+    65% {
+        opacity: 1;
+        transform: rotate(360deg) scale(1.1);
+        animation-timing-function: step-end;
+    }
+
+    92% {
+        transform: scale(1.1);
+        animation-timing-function: ease-in;
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes fade-out {
+    to {        
+        display: none !important;
+    }
+}
+
+.hidden.fade {
+    opacity: 0;
+    pointer-events: none;
+    animation-name: fade-out;
+    animation-duration: .3s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-timing-function: step-start;
+    backdrop-filter: none !important;
+}
+
+.fade {
+    transition: opacity .3s, backdrop-filter .3s;
+}

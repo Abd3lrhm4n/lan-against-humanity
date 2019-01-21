@@ -1,0 +1,15 @@
+﻿{
+	"host": "http://localhost:80",
+	"max_players": 10,
+	"min_players": 3,
+	"max_player_name_length": 64,
+	"hand_size": 10,
+	"blank_cards": 3,
+	"round_end_timeout": 5000,
+	"game_end_timeout": 30000,
+	"max_points": 30,
+	"perma_czar": false,
+	"afk_time_seconds": 600,
+	"afk_recovery_time_seconds": 90,
+	"content_exclude": []
+}

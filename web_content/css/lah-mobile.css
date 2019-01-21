@@ -1,0 +1,757 @@
+/* MOBILE */
+
+@media only screen and (max-width: 770px) {
+    /* Cards have .715 w/h ratio */
+
+    :root {
+        --card-width: 10.01rem;
+        --card-height: 14rem;
+        --card-border-radius: 14px;
+        --card-padding: 1em;
+    }
+
+    body {
+        background: #d7d7d7;
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+        height: 100vh;
+        text-size-adjust: 100%;
+    }
+    
+    .disabled {
+        opacity: .35;
+        pointer-events: none;
+    }
+
+    small {
+        display: inline;
+        font-size: .65em;
+    }
+    
+    smaller {
+        display: inline;
+        font-size: .4em;
+    }
+
+    .mobile-hidden {
+        display: none !important;
+        pointer-events: none !important;
+    }
+
+    .mobile-btn-menu:after {
+        content: "\2807";  
+        text-align: center; 
+        margin-left: .25em;
+    }
+
+    .mobile-btn-menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 1em;
+        height: 1em;
+        padding: .2em;
+        font-size: 28pt;
+        text-align: center;
+        overflow: visible;
+        color: #333;
+        z-index: 10000;
+    }
+
+    .mobile-btn-menu:active {
+        color: #666;
+        background: rgba(.5, .5, .5, .05);
+    }
+
+    #btn-mobile-nav {
+        position: absolute;
+        top: 0;
+        right: 0;        
+    }
+
+    #navbar {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        background: #ddd;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        min-height: 30pt;
+        padding: 56pt 16pt;
+        z-index: 9999;
+    }
+
+    #navbar .lah-btn {
+        padding: 12pt 6pt;
+        margin: 4pt 0;
+    }
+
+    #navbar .nav-header {
+        position: absolute;
+        left: 16pt;
+        top: 0;
+        right: 16pt;
+        margin-top: 12pt;
+        font-size: 150%;
+        text-align:center;
+    }
+
+    #navbar input[type="button"] {
+        width: 100%;
+    }
+    
+    .nav-end {
+        align-self: flex-end;
+    }
+    
+    #game {
+        max-width: 100vw;
+        max-height: 100vh;
+        min-width: 100vw;
+        min-height: 100vh;
+        overflow: hidden;
+        display: grid;
+        grid-template-columns: [c-start] 100% [c-center] 0% [c-end];
+        grid-template-rows: [r-start] 50% [r-center] 50% [r-end];
+    }
+
+    /* NOTIFICATION BANNER */
+
+    #notify-banner {
+        position: fixed;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        left: 0;
+        top: 48vh;
+        transform: translateY(-50%);
+        min-height: 85pt;
+        padding: 12pt;
+        background: rgba(16, 16, 16, .75);
+        cursor: default;
+        box-sizing: border-box;
+        backdrop-filter: blur(5px);
+    }
+
+    #notify-banner-text {
+        font-size: 24pt;
+        max-width: 100%;
+        word-wrap: break-word;
+        color: white;
+        text-align: center;
+    }
+
+    /* BLACK CARD AREA */
+
+    #black-card-area {
+        grid-column: c-start / c-end;
+        grid-row: r-start / r-center;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: flex-end;
+        position: relative;
+        align-items: center;
+    }
+
+    .lah-stage-playing.lah-judge #black-card-area {
+        grid-row: r-start / r-center;
+        grid-column: c-start / c-end;
+    }
+
+    .lah-stage-playing.lah-judge #black-card-area card {
+        grid-row: r-start / r-end;
+        grid-column: c-start / c-end;
+        transform: scale(1);
+    }
+
+    /* JUDGE STATUS & MESSAGE AREAS */
+
+    #judge-message-area {
+        display: none;
+        grid-row: r-start / r-center;
+        grid-column: c-start / c-end;
+        flex-direction: row;
+        justify-self: center;
+        align-self: flex-end;
+        transform: translateY(calc(var(--card-height) * -1 - 16pt));
+        font-size: 12pt !important;
+    }
+
+    #judge-message-body, #judge-message-body * {
+        text-align: center;
+        font-size: inherit !important;
+    }
+
+    #judge-status-card-area {
+        display: none;
+        flex-direction: row;
+        grid-row: r-center / r-end;
+        grid-column: c-start / c-end;
+        justify-content: center;
+        align-items: center;
+        color: #888;
+        pointer-events: none;
+    }
+
+    #game.lah-stage-playing.lah-judge #judge-status-card-area,
+    #game.lah-stage-playing.lah-judge #judge-message-area {
+        display: flex;
+    }
+
+    #judge-status-card {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: var(--card-width);
+        height: var(--card-height);
+        border-radius: var(--card-border-radius);
+        border: 4px dashed #888;
+        box-sizing: border-box;
+    }
+
+    #judge-status-card-text {
+        font-size: 64pt;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    /* HAND AREA */
+    
+    #hand-area {
+        grid-row: r-center / r-end;
+        grid-column: c-start / c-end;
+        display: flex;
+        position: relative;
+        align-items: flex-end;
+    }
+
+    /* PLAY AREA */
+
+    #play-area {        
+        grid-row: r-center / r-end;
+        grid-column: c-start / c-end;
+        position: relative;  
+        display: flex;
+        align-items: center;        
+    }
+
+    .lah-stage-judging.lah-judge #play-cards-area {
+        margin-bottom: 56pt;
+    }
+
+    .lah-stage-round-end #play-cards-scroll-area {
+        overflow: visible;
+    }
+
+    #play-cards-scroll-area > .lah-card-container-inner {
+        margin: 24pt 0;
+    }
+
+    #play-cards-scroll-area::-webkit-scrollbar {
+        display: none;
+    }
+
+    #hand-cards-scroll-area::-webkit-scrollbar {
+        display: none;
+    }
+
+    #judge-controls-area {
+        position: absolute;
+        bottom: 4pt;
+        left: 8pt;
+        right: 8pt;
+        display: none;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    #judge-controls-area > * {
+        flex-grow: 1;
+    }
+    
+    #game.lah-stage-judging.lah-judge #judge-controls-area {
+        display: flex;
+    }
+
+    #game.lah-stage-judging.lah-judge #play-cards-area > .card-group {
+        transition: margin .3s, transform .3s !important;
+    }
+    
+    #game.lah-stage-judging.lah-judge #play-cards-area > .card-group:hover {
+        background: #aaa;
+    }
+    
+    #game.lah-stage-judging.lah-judge #play-cards-area > .card-group.judge-selected {
+        background: #888;
+        margin: 0 8pt;
+        transform: translate(0, -8pt);
+    }
+
+    .card-group.judge-selected card {
+        animation-name: rumble;
+        animation-duration: .3s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-timing-function: ease-in-out;
+    }
+    
+    .card-group.judge-selected card:nth-child(odd) {
+        animation-delay: .3s;
+    }
+
+    .card-group.judge-selected card:only-child {
+        animation-name: tilt;
+        animation-duration: .275s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-timing-function: ease-in-out;
+    }
+
+    card[white].winner, .card-group.winner card[white] {
+        background: linear-gradient(to bottom, rgb(255, 230, 5), rgb(231, 160, 8));
+        color: black;
+    }
+
+    #game.lah-stage-judging #play-area {
+        justify-content: space-between;
+    }
+
+    #status-area {
+        position: absolute;
+        left: 10pt;
+        top: 10pt;
+        right: 24pt;
+        word-wrap: normal;
+        font-size: 14pt;
+        text-align: left;
+    }
+
+    #hand-cards-area {     
+        margin-bottom: 28pt;
+    }
+
+    .lah-scroll-left::before, .lah-scroll-right::after {
+        content: "";
+        width: 0;
+        height: 0;
+        position: absolute;
+        box-sizing: border-box;
+        pointer-events: none;
+        z-index: 9999;
+        top: 50%;
+        transform: translateY(-50%);
+        animation-direction: alternate;
+        animation-duration: .25s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in;
+    }
+    
+    .lah-scroll-left::before {    
+        border-right: 12pt solid rgba(0, 0, 0, .5);
+        border-top: 18pt solid transparent;
+        border-bottom: 18pt solid transparent;
+        left: 8pt;
+        animation-name: left-arrow-nudge;
+    }
+    
+    .lah-scroll-right::after {
+        border-left: 12pt solid rgba(0, 0, 0, .5);
+        border-top: 18pt solid transparent;
+        border-bottom: 18pt solid transparent;
+        right: 8pt;
+        animation-name: right-arrow-nudge;
+    }
+
+    @keyframes left-arrow-nudge {
+        from {
+            transform: translate(0, -50%);
+            opacity: .9;
+        }
+        to {
+            transform: translate(-2pt, -50%);
+        }
+    }
+    
+    @keyframes right-arrow-nudge {
+        from {
+            transform: translate(0, -50%);
+            opacity: .9;
+        }
+        to {
+            transform: translate(2pt, -50%); 
+        }
+    }
+
+    #hand-cards-container {
+        padding: 32pt 8pt;
+    }
+
+    #hand-cards-container > card:last-child {
+        margin-right: 0;
+    }
+
+    #hand-cards-container > card:first-child {
+        margin-left: 0;
+    }
+    
+    /* CARD STYLES */
+
+    card {
+        display: block;
+        position: relative;
+        background-color: white;
+        border: 2px solid black;
+        border-radius: 14px;
+        padding: 1em;
+        line-height: 1.35;
+        margin: .3rem .3rem;
+        cursor: default;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        transition: box-shadow 0.3s;
+        user-select: none;
+        box-sizing: border-box !important;
+        min-width: var(--card-width) !important;
+        max-width: var(--card-width) !important;
+        max-height: var(--card-height) !important;
+        min-height: var(--card-height) !important;
+        font-size: 11pt;
+    }
+    
+    card.placeholder {
+        border-style: dashed;
+        border-width: 2px;
+        background: transparent;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    card.placeholder::after {
+        content: "?";
+        font-size: 300%;
+        display: block;
+        text-align: center;
+        align-self: center;
+        margin: 0 auto;
+        color: #555;
+    }
+    
+    card .pick {
+        position: absolute;
+        font-size: 0.75em;
+        right: 1.45rem;
+        bottom: 2rem;
+    }
+    
+    card .pick::before {
+        content: "PICK ";
+    }
+    
+    card .pick .num {
+        color: black;
+        display: inline-block;
+        text-align: center;
+        line-height: .9em;
+        font-weight: 900;
+        font-size: 1.2em;
+        background: white;
+        border: 2px solid white;
+        border-radius: 100%;
+        padding: 1px 1px 1px 0px;
+        min-width: .9em;
+        height: .9em;
+        white-space: nowrap;
+        box-sizing: initial !important;
+    }
+    
+    card .logo {
+        position: absolute;
+        left: 1.5rem;
+        bottom: 1.25rem;
+        font-size: 42%;
+        font-weight: 600;
+        text-rendering: optimizeLegibility;
+    }
+    
+    card .logo::before {
+        content: "";
+        background-image: url("../img/lah-logo.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        image-rendering: optimizeQuality;
+        transform: translate(-2px, 8px);
+        min-width: 24px;
+        min-height: 24px;
+        display: inline-block;
+    }
+    
+    card .logo::after {
+        content: "LAN Against Humanity";
+    }
+    
+    card .pick+.logo::after {
+        content: "LAH";
+    }
+    
+    card[black] {
+        background-color: black;
+        color: white;
+    }
+    
+    card[white] {
+        background-color: #f6f6f6;
+        color: black;
+    }
+
+    card[data-card="blank"] > .blank-card-text-container {
+        pointer-events: auto !important;
+        position: absolute;    
+        top: 10pt;
+        left: 10pt;
+        right: 10pt;
+        bottom: 32pt;
+        box-sizing: content-box;
+        border-radius: 6pt;
+        border: 2px dashed transparent;
+        transition: border-color .3s;
+    }
+    
+    card[data-card="blank"] > .blank-card-text-container .blank-card-text {
+        font-size: inherit !important;
+        line-height: inherit !important;
+        resize: none;
+        outline: none;
+        border: none;
+        margin: 0;
+        padding: 4pt;
+        color: #368;
+        background: transparent;
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+    }
+    
+    card[data-card="blank"] .blank-card-text-container:hover {
+        border: 2px dashed #ccc;
+    }
+    
+    card[data-card="blank"] .blank-card-text, card[data-card^="custom:"] {
+        font-family: "Comic Sans MS", "Helvetica", sans-serif !important;
+    }
+    
+    card[data-card="blank"] .blank-card-text::placeholder {
+        font-family: "Helvetica", sans-serif;
+    }
+    
+    *:not(.disabled) card[white].user:active, #hand-area:not(.disabled) card[white]:active, .selecting card[white]:active {
+        filter: brightness(0.95);
+        color: #333;
+        border-color: #333;
+        transform: translate(0, 1.75pt);
+    }
+    
+    card[white].winner {
+        background: linear-gradient(to bottom, rgb(255, 230, 5), rgb(231, 160, 8));
+        color: black;
+    }
+    
+    @keyframes card-selection {
+        from {
+            opacity: 0;
+            transform: translate(-50%, -100%);
+        }
+        to {
+            opacity: 1;
+            transform: translate(-50%, calc(-100% - 8pt));
+        }
+    }
+    
+    card[data-selection]::after {
+        content: attr(data-selection);
+        transform: translate(-50%, calc(-100% - 8pt));
+        position: absolute;
+        top: 0;
+        left: 50%;
+        color: white;
+        background: black;
+        border-radius: 100%;
+        padding: 2px 2px;
+        font-size: 15pt;
+        width: 1.2em;
+        height: 1.2em;
+        line-height: 1.2em;
+        overflow: visible;
+        text-align: center;
+        pointer-events: none;
+        animation-name: card-selection;
+        animation-duration: .25s;
+        animation-timing-function: ease-out;
+    }
+    
+    #hand-controls-area {
+        position: absolute;
+        bottom: 4pt;
+        left: 8pt;
+        right: 8pt;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    #hand-controls-area > * {
+        flex-grow: 1;
+    }
+    
+    .lah-btn {
+        outline: none;
+        padding: 8pt 25pt;
+        background: #eee;
+        border: 2px solid black;
+        border-width: 2px 2px 7px 2px;
+        border-radius: 6pt;
+        font-size: 22pt;
+    }
+    
+    .lah-btn-small {
+        font-size: 16pt;
+        padding: 4pt 12pt;
+        border-bottom-width: 4px;
+    }
+    
+    .lah-btn:not(.disabled):hover {
+        border-color: #444;
+        color: #444;
+        cursor: pointer;
+    }
+    
+    .lah-btn:not(.disabled):active {
+        transform: translate(0, 2px);
+        /* border-bottom-width: 5px; */
+    }
+    
+    .lah-btn.lah-btn-small:not(.disabled):active {
+        transform: translate(0, 2px);
+        /* border-bottom-width: 3px; */
+    }
+    
+    .lah-btn.disabled {
+        opacity: .35;
+    }
+    
+    .lah-txtbox {
+        padding: 6pt;
+        outline: none;
+        border: 2px solid black;
+        border-bottom-width: 4px;
+        border-radius: 4pt;
+        font-size: 14pt;
+    }
+    
+    .lah-label {
+        display: block;
+        font-size: 14pt;
+        margin: 4pt 1pt;
+        color: #444;
+    }
+    
+    .modal {
+        display: flex;
+        position: fixed;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        z-index: 2147483647;
+    }
+    
+    .modal-dialog {
+        background: #f6f6f6; 
+        padding: 20pt 24pt;
+        flex-grow: 1;
+    }
+    
+    .modal-body {
+        width: 100%;
+        height: 100%;
+        margin-top: var(--modal-nav-height);
+    }
+    
+    .modal-nav {
+        position: absolute;
+        top: 4pt;
+        left: 8pt;
+        right: 8pt;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        height: var(--modal-nav-height);
+    }
+    
+    .modal-close {
+        width: 20pt;
+        height: 20pt;
+        font-size: 20pt;
+        background: none;
+        border: none;
+        outline: none;
+        text-align: center;
+        cursor: pointer;
+    }
+    
+    .modal-close:hover {
+        color: #666;
+    }
+    
+    .modal-close:active {
+        transform: translate(0, 1pt);
+    }
+    
+    .lah-vlist {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: 100%;
+    }
+    
+    .lah-vlist > .lah-listitem {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        margin: 4pt;
+        width: 100%;
+    }
+    
+    .lah-vlist > .lah-separator {
+        margin: 8pt 4pt;
+    }
+    
+    .lah-vlist > .lah-listend {
+        align-self: flex-end;
+        justify-self: flex-end;    
+    }
+    
+    .lah-hlist {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .lah-align-end {
+        justify-content: flex-end;
+    }
+    
+    .lah-listitem > input[type="text"] {
+        flex-grow: 1;
+    }
+}

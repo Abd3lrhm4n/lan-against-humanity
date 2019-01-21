@@ -1,0 +1,2350 @@
+{
+    "id": "berkins_deck",
+    "name": "Berkin's Big Deck",
+    "author": "Nicholas Fleck, Matthew Farstad, Jessica Fleck",
+    "cards": [
+        {
+            "id": "w_saddick",
+            "content": {
+                "en-US": "A severed penis.",
+                "de-DE": "Ein abgetrennter Penis."
+            },
+            "flags": "gnm bg"
+        },
+        {
+            "id": "w_couchfart",
+            "content": {
+                "en-US": "Concentrated couch farts.",
+                "de-DE": "Sofafurzkonzentrat."
+            },
+            "flags": "g"
+        },
+        {
+            "id": "w_crustysock",
+            "content": {
+                "en-US": "That one crusty sock.",
+                "de-DE": "Diese eine verkrustete Socke."
+            },
+            "flags": "g s"
+        },
+        {
+            "id": "w_thumbbag",
+            "content": {
+                "en-US": "A plastic bag full of wriggling thumbs.",
+                "de-DE": "Eine Plastiktüte voller wackelnden Daumen."
+            },
+            "flags": "g w"
+        },
+        {
+            "id": "w_mysterypube",
+            "content": {
+                "en-US": "A mysterious pube.",
+                "de-DE": "Ein mysteriöses Schamhaar."
+            },
+            "flags": "g w"
+        },
+        {
+            "id": "w_thomas",
+            "content": {
+                "en-US": "Thomas the Tank Engine.",
+                "de-DE": "Thomas die Lokomotive."
+            },
+            "flags": "fc"
+        },
+        {
+            "id": "w_thomasdick",
+            "content": {
+                "en-US": "Thomas the Tank Engine's gigantic iron dick.",
+                "de-DE": "Der gigantische Eisenschwanz von Thomas, der Lokomotive."
+            },
+            "flags": "gnm fc"
+        },
+        {
+            "id": "w_tidepods",
+            "content": {
+                "en-US": "Tide Pods.",
+                "de-DE": "Tide Pods.",
+                "da-DK": "Tide Pods."
+            }
+        },
+        {
+            "id": "w_pathead",
+            "content": {
+                "en-US": "Patrick Stewart's silky-smooth head.",
+                "de-DE": "Patrick Stewarts seidenglatter Kopf."
+            },
+            "flags": "ce w"
+        },
+        {
+            "id": "w_lettuce",
+            "content": {
+                "en-US": "\"Lettuce\".",
+                "de-DE": "\"Salat\"."
+            }
+        },
+        {
+            "id": "w_mcqueen",
+            "content": {
+                "en-US": "Lightning McQueen.",
+                "de-DE": "Lightning McQueen.",
+                "da-DK": "Lightning McQueen."
+            },
+            "flags": "fc"
+        },
+        {
+            "id": "w_dogcum",
+            "content": {
+                "en-US": "A donut filled with dog semen.",
+                "de-DE": "Ein Donut voller Hundesamen."
+            },
+            "flags": "an s g"
+        },
+        {
+            "id": "w_dickbreak",
+            "content": {
+                "en-US": "Penile fracture.",
+                "de-DE": "Penisbruch."
+            },
+            "flags": "gnm i"
+        },
+        {
+            "id": "w_jazzhands",
+            "content": {
+                "en-US": "Jazz hands.",
+                "de-DE": "Jazz-Hände."
+            }
+        },
+        {
+            "id": "w_deadwood",
+            "content": {
+                "en-US": "Post-mortem erection.",
+                "de-DE": "Post-Mortem-Erektion."
+            },
+            "flags": "d gnm s"
+        },
+        {
+            "id": "w_wafflestomp",
+            "content": {
+                "en-US": "Shitting in the shower and stomping it down the drain.",
+                "de-DE": "In die Dusche scheißen und sie in den Abfluss stampfen."
+            },
+            "flags": "w g fe"
+        },
+        {
+            "id": "w_vaginatacks",
+            "content": {
+                "en-US": "A vagina full of thumbtacks.",
+                "de-DE": "Eine Vagina voller Reißzwecken."
+            },
+            "flags": "gnf w"
+        },
+        {
+            "id": "w_snortingpeppers",
+            "content": {
+                "en-US": "Snorting cayenne powder."
+            },
+            "flags": "w"
+        },
+        {
+            "id": "w_acupuncture",
+            "content": {
+                "en-US": "Overly enthusiastic acupuncture.",
+                "es-MX": "Acupuntura demasiado entusiasta."
+            },
+            "flags": "w i"
+        },
+        {
+            "id": "w_irs",
+            "content": {
+                "en-US": "Threatening letters from the IRS.",
+                "de-DE": "Bedrohliche Briefe von der IRS."
+            }
+        },
+        {
+            "id": "w_longhug",
+            "content": {
+                "en-US": "A hug that lasts a little too long.",
+                "de-DE": "Eine Umarmung, die ein bisschen zu lange dauert."
+            },
+            "flags": "w"
+        },
+        {
+            "id": "w_papsmear",
+            "content": {
+                "en-US": "A pap smear."
+            },
+            "flags": "gnf"
+        },
+        {
+            "id": "w_bricks",
+            "content": {
+                "en-US": "Cheating at the pillow fight by filling yours with bricks."
+            },
+            "flags": "v"
+        },
+        {
+            "id": "w_dickfungus",
+            "content": {
+                "en-US": "Penile fungal infections."
+            },
+            "flags": "g w gnm"
+        },
+        {
+            "id": "w_hornyelephant",
+            "content": {
+                "en-US": "A ravenously horny elephant."
+            },
+            "flags": "an s"
+        },
+        {
+            "id": "w_stripsearch",
+            "content": {
+                "en-US": "Being strip-searched and liking it."
+            },
+            "flags": "w"
+        },
+        {
+            "id": "w_jenkem",
+            "content": {
+                "en-US": "Jenkem.",
+                "de-DE": "Jenkem.",
+                "da-DK": "Jenkem."
+            },
+            "flags": "dr g w fe"
+        },
+        {
+            "id": "w_foxnews",
+            "content": {
+                "en-US": "Fox News.",
+                "de-DE": "Fox News.",
+                "da-DK": "Fox News."
+            }
+        },
+        {
+            "id": "w_heroinass",
+            "content": {
+                "en-US": "Smuggling a shit-ton of heroin in your rectum."
+            },
+            "flags": "dr gn g"
+        },
+        {
+            "id": "w_blueballs",
+            "content": {
+                "en-US": "Blue balls.",
+                "de-DE": "Blaue Eier."
+            },
+            "flags": "gn gnm i g"
+        },
+        {
+            "id": "w_maplepiss",
+            "content": {
+                "en-US": "Maple syrup urine disease.",
+                "de-DE": "Ahornsirupkrankheit."
+            },
+            "flags": "di w"
+        },
+        {
+            "id": "w_funeralwood",
+            "content": {
+                "en-US": "Getting a boner at a funeral.",
+                "de-DE": "Einen Ständer auf einer Beerdigung kriegen."
+            },
+            "flags": "w s"
+        },
+        {
+            "id": "w_roaches",
+            "content": {
+                "en-US": "A horde of hungry cockroaches.",
+                "de-DE": "Eine Horde hungriger Kakerlaken."
+            }
+        },
+        {
+            "id": "w_schoolshoot",
+            "content": {
+                "en-US": "School shootings.",
+                "de-DE": "Schulschießereien."
+            },
+            "flags": "v"
+        },
+        {
+            "id": "w_skinjacket",
+            "content": {
+                "en-US": "A leather jacket made of human skin.",
+                "de-DE": "Eine Lederjacke aus menschlicher Haut."
+            },
+            "flags": "w g"
+        },
+        {
+            "id": "w_morningbreath",
+            "content": {
+                "en-US": "Morning breath.",
+                "de-DE": "Morgenmundgeruch."
+            },
+            "flags": "g"
+        },
+        {
+            "id": "w_butterman",
+            "content": {
+                "en-US": "A 600lb naked man covered in butter.",
+                "de-DE": "Ein 270kg nackter Mann, der mit Butter bedeckt ist."
+            },
+            "flags": "w g"
+        },
+        {
+            "id": "w_smoothmario",
+            "content": {
+                "en-US": "Mario without a mustache.",
+                "de-DE": "Mario ohne Schnurrbart."
+            },
+            "flags": "w fc"
+        },
+        {
+            "id": "w_flybottle",
+            "content": {
+                "en-US": "A 2-liter bottle of dead flies.",
+                "de-DE": "Eine 2-Liter-Flasche voller toten Fliegen."
+            },
+            "flags": "g"
+        },
+        {
+            "id": "w_chococysts",
+            "content": {
+                "en-US": "Chocolate-covered sebaceous cysts."
+            },
+            "flags": "w g"
+        },
+        {
+            "id": "w_dinnerjerk",
+            "content": {
+                "en-US": "Masturbating at the dinner table to assert dominance.",
+                "de-DE": "Masturbieren am Esstisch, um die Dominanz zu behaupten."
+            },
+            "flags": "w s"
+        },
+        {
+            "id": "w_thrillofhunt",
+            "content": {
+                "en-US": "The thrill of the hunt."
+            }
+        },
+        {
+            "id": "w_realdoughboy",
+            "content": {
+                "en-US": "The Pillsbury Doughboy with realistic human eyes.",
+                "de-DE": "Der Pillsbury Doughboy mit realistischen menschlichen Augen."
+            },
+            "flags": "w fc"
+        },
+        {
+            "id": "w_sheeranface",
+            "content": {
+                "en-US": "Ed Sheeran's gazing, disembodied face.",
+                "de-DE": "Ed Sheerans starrendes, körperloses Gesicht."
+            },
+            "flags": "w ce"
+        },
+        {
+            "id": "w_weirdtube",
+            "content": {
+                "en-US": "The weird side of YouTube.",
+                "de-DE": "Der seltsame Bereich von YouTube."
+            }
+        },
+        {
+            "id": "w_highmusic",
+            "content": {
+                "en-US": "Getting high as a kite and listening to Paulstretched music for hours."
+            },
+            "flags": "dr"
+        },
+        {
+            "id": "w_coffeeenema",
+            "content": {
+                "en-US": "A coffee enema.",
+                "de-DE": "Ein Kaffeeeinlauf."
+            },
+            "flags": "w g"
+        },
+        {
+            "id": "w_sonicart",
+            "content": {
+                "en-US": "Poorly-drawn Sonic OCs.",
+                "de-DE": "Schlecht gezeichnete Sonic-OCs."
+            },
+            "flags": "fc w"
+        },
+        {
+            "id": "w_inflateporn",
+            "content": {
+                "en-US": "Inflation porn.",
+                "de-DE": "Befüllungspornos."
+            },
+            "flags": "xf s w x"
+        },
+        {
+            "id": "w_unwanteddiscovery",
+            "content": {
+                "en-US": "Accidentally finding your dad's gallon jug of anal lube."
+            },
+            "flags": "s w"
+        },
+        {
+            "id": "w_vaporwave",
+            "content": {
+                "en-US": "Vaporwave.",
+                "de-DE": "Vaporwave.",
+                "da-DK": "Vaporwave.",
+                "es-MX": "Vaporwave."
+            }
+        },
+        {
+            "id": "w_supple",
+            "content": {
+                "en-US": "His supple skin.",
+                "de-DE": "Seine geschmeidige Haut."
+            },
+            "flags": "w"
+        },
+        {
+            "id": "w_bosspunch",
+            "content": {
+                "en-US": "Punching my boss in his dumb fucking face."
+            },
+            "flags": "v"
+        },
+        {
+            "id": "w_bloatpoke",
+            "content": {
+                "en-US": "Puncturing bloated roadkill and huffing the fumes.",
+                "de-DE": "Aufgeblähte überfahrene Tiere anstechen und die Dämpfe tief einatmen."
+            },
+            "flags": "w g dr"
+        },
+        {
+            "id": "w_zoophilia",
+            "content": {
+                "en-US": "Zoophilia.",
+                "de-DE": "Zoophilie."
+            },
+            "flags": "xf s"
+        },
+        {
+            "id": "w_kidfreezer",
+            "content": {
+                "en-US": "A freezer full of dead children.",
+                "de-DE": "Ein Tiefkühlschrank voller toten Kinder."
+            },
+            "flags": "w g mu d"
+        },
+        {
+            "id": "w_altbodybag",
+            "content": {
+                "en-US": "Forgetting the body bag and using cling wrap instead."
+            },
+            "flags": "d w g"
+        },
+        {
+            "id": "w_unfairtwister",
+            "content": {
+                "en-US": "Playing Twister against quadriplegics.",
+                "de-DE": "Twister gegen Quadriplegiker spielen."
+            },
+            "flags": "ds_cr"
+        },
+        {
+            "id": "w_loudporn",
+            "content": {
+                "en-US": "Watching porn but forgetting to plug in your headphones.",
+                "de-DE": "Pornos anschauen, aber vergessen, deinen Kopfhörer einzustecken."
+            },
+            "flags": "x"
+        },
+        {
+            "id": "w_stapletapeworms",
+            "content": {
+                "en-US": "Stapling tapeworms on your penis.",
+                "de-DE": "Bandwürmer an deinen Penis antackern."
+            },
+            "flags": "w g s xf i"
+        },
+        {
+            "id": "w_jw",
+            "content": {
+                "en-US": "Jehova's Witnesses.",
+                "de-DE": "Zeugen Jehovas."
+            },
+            "flags": "re"
+        },
+        {
+            "id": "w_dickhouse",
+            "content": {
+                "en-US": "Sticking your dick in a birdhouse full of hungry chicks."
+            },
+            "flags": "an gnm s xf w g"
+        },
+        {
+            "id": "w_blackvomit",
+            "content": {
+                "en-US": "Vomiting mysterious black liquid."
+            },
+            "flags": "w g"
+        },
+        {
+            "id": "w_oddmusic",
+            "content": {
+                "en-US": "Ominous music."
+            }
+        },
+        {
+            "id": "w_zyklon",
+            "content": {
+                "en-US": "Zyklon-B.",
+                "de-DE": "Zyklon-B."
+            },
+            "flags": "as cr mu"
+        },
+        {
+            "id": "w_sadanimals",
+            "content": {
+                "en-US": "Depressing ASPCA commercials.",
+                "de-DE": "Deprimierende ASPCA-Werbespots."
+            }
+        },
+        {
+            "id": "w_aspcasarah",
+            "content": {
+                "en-US": "Sarah McLachlan, here to ruin your fucking day.",
+                "de-DE": "Sarah McLachlan, da, um deinen ganzen Tag zu verficken."
+            }
+        },
+        {
+            "id": "w_richprince",
+            "content": {
+                "en-US": "A wealthy Nigerian prince."
+            }
+        },
+        {
+            "id": "w_mufasacorpse",
+            "content": {
+                "en-US": "Mufasa's festering carcass."
+            },
+            "flags": "fc an"
+        },
+        {
+            "id": "w_frogtub",
+            "content": {
+                "en-US": "A bathtub full of live frogs.",
+                "de-DE": "Eine Badewanne voller lebendiger Frösche."
+            },
+            "flags": "an w g"
+        },
+        {
+            "id": "w_interrogation",
+            "content": {
+                "en-US": "Enhanced interrogation techniques."
+            },
+            "flags": "v cr"
+        },
+        {
+            "id": "w_limphandshake",
+            "content": {
+                "en-US": "A limp handshake."
+            }
+        },
+        {
+            "id": "w_moderateautism",
+            "content": {
+                "en-US": "Moderate autism."
+            },
+            "flags": "ds"
+        },
+        {
+            "id": "w_severeautism",
+            "content": {
+                "en-US": "Severe autism."
+            },
+            "flags": "ds"
+        },
+        {
+            "id": "w_oopshomo",
+            "content": {
+                "en-US": "Forgetting to say \"no homo\".",
+                "de-DE": "Vergessen, \"no homo\" zu sagen."
+            },
+            "flags": "nh s"
+        },
+        {
+            "id": "w_yeshomo",
+            "content": {
+                "en-US": "'Forgetting' to say \"no homo\".",
+                "de-DE": "'Vergessen', \"no homo\" zu sagen."
+            },
+            "flags": "nh s"
+        },
+        {
+            "id": "w_greengiant",
+            "content": {
+                "en-US": "Getting viciously ass-fucked by the Green Giant.",
+                "de-DE": "Vom Grünen Riesen brutal in den Arsch gefickt werden."
+            },
+            "flags": "fc s w"
+        },
+        {
+            "id": "w_greenass",
+            "content": {
+                "en-US": "A grass-stained asshole.",
+                "de-DE": "Ein grasfleckiges Arschloch."
+            },
+            "flags": "w g"
+        },
+        {
+            "id": "w_newmystery",
+            "content": {
+                "en-US": "The gang's newest mystery."
+            }
+        },
+        {
+            "id": "w_niceveins",
+            "content": {
+                "en-US": "Nice veins."
+            }
+        },
+        {
+            "id": "w_elmoass",
+            "content": {
+                "en-US": "Elmo's gaping asshole."
+            },
+            "flags": "fc s"
+        },
+        {
+            "id": "w_rectprolapse",
+            "content": {
+                "en-US": "Rectal prolapse.",
+                "de-DE": "Rektumprolaps."
+            },
+            "flags": "i g"
+        },
+        {
+            "id": "w_deathembrace",
+            "content": {
+                "en-US": "The sweet embrace of death."
+            },
+            "flags": "d"
+        },
+        {
+            "id": "w_tonsilsnack",
+            "content": {
+                "en-US": "Reusing your tonsil stones as fish food.",
+                "de-DE": "Deine Mandelsteine als Fischfutter benutzen."
+            },
+            "flags": "w g"
+        },
+        {
+            "id": "w_ancientciv",
+            "content": {
+                "en-US": "An ancient underground civilization."
+            }
+        },
+        {
+            "id": "w_georgebush",
+            "content": {
+                "en-US": "George W. Bush."
+            },
+            "flags": "ce"
+        },
+        {
+            "id": "w_lotsamaggots",
+            "content": {
+                "en-US": "An incredible amount of maggots.",
+                "de-DE": "Eine unglaublich große Menge Maden."
+            },
+            "flags": "g"
+        },
+        {
+            "id": "w_tefiti",
+            "content": {
+                "en-US": "The heart of Te Fiti.",
+                "de-DE": "Das Herz von Te Fiti."
+            }
+        },
+        {
+            "id": "w_trickledown",
+            "content": {
+                "en-US": "Trickle-down economics.",
+                "de-DE": "Trinkle-Down-Wirtschaft."
+            }
+        },
+        {
+            "id": "w_darkmeat",
+            "content": {
+                "en-US": "Dark meat.",
+                "de-DE": "Dunkles Fleisch."
+            }
+        },
+        {
+            "id": "w_cumbrick",
+            "content": {
+                "en-US": "A solid brick of dried semen.",
+                "de-DE": "Ein Ziegel getrocknetes Samens."
+            },
+            "flags": "w g"
+        },
+        {
+            "id": "w_dickwhistle",
+            "content": {
+                "en-US": "Whistling out of your dick."
+            },
+            "flags": "w gnm"
+        },
+        {
+            "id": "w_buzzlightyear",
+            "content": {
+                "en-US": "Buzz Lightyear to the rescue!"
+            },
+            "flags": "fc"
+        },
+        {
+            "id": "w_devilnut",
+            "content": {
+                "en-US": "Satan's left testicle.",
+                "de-DE": "Der linke Hode des Teufels."
+            },
+            "flags": "re gnm"
+        },
+        {
+            "id": "w_lostbrother",
+            "content": {
+                "en-US": "My long-lost brother."
+            }
+        },
+        {
+            "id": "w_shitclap",
+            "content": {
+                "en-US": "Shitting into your hands and clapping."
+            },
+            "flags": "w g fe"
+        },
+        {
+            "id": "w_superherpes",
+            "content": {
+                "en-US": "Super herpes."
+            },
+            "flags": "s di"
+        },
+        {
+            "id": "w_ffthreesome",
+            "content": {
+                "en-US": "A sweaty threesome between Colonel Sanders, Ronald McDonald, and The King.",
+                "de-DE": "Ein verschwitzter Dreier mit Colonel Sanders, Ronald McDonald und The King."
+            },
+            "flags": "w s nh fc"
+        },
+        {
+            "id": "w_furries",
+            "content": {
+                "en-US": "Furries.",
+                "de-DE": "Furrys."
+            },
+            "flags": "xf"
+        },
+        {
+            "id": "w_dickpics",
+            "content": {
+                "en-US": "Dick pics.",
+                "de-DE": "Penisbilder."
+            },
+            "flags": "gnm"
+        },
+        {
+            "id": "w_frogmouth",
+            "content": {
+                "en-US": "A mouthful of dead frogs.",
+                "de-DE": "Ein Mund voller toter Frösche."
+            },
+            "flags": "w g"
+        },
+        {
+            "id": "w_grinch",
+            "content": {
+                "en-US": "The Grinch.",
+                "de-DE": "Der Grinch."
+            },
+            "flags": "fc"
+        },
+        {
+            "id": "w_ballcrush",
+            "content": {
+                "en-US": "Putting your balls in a can crusher."
+            }
+        },
+        {
+            "id": "w_nutbust",
+            "content": {
+                "en-US": "Busting a nut.",
+                "de-DE": "Heftig ejakulieren."
+            }
+        },
+        {
+            "id": "w_csf",
+            "content": {
+                "en-US": "Cumming and shitting and farting.",
+                "de-DE": "Kommen und scheißen und furzen."
+            }
+        },
+        {
+            "id": "w_disappoint",
+            "content": {
+                "en-US": "Crushing disappointment.",
+                "de-DE": "Quälende Enttäuschung."
+            }
+        },
+        {
+            "id": "w_ovencry",
+            "content": {
+                "en-US": "A faint, muffled cry coming from the oven.",
+                "de-DE": "Ein leiser, gedämpfter Schrei aus dem Ofen."
+            }
+        },
+        {
+            "id": "w_turbofap",
+            "content": {
+                "en-US": "Jacking off vigorously."
+            }
+        },
+        {
+            "id": "w_extremesadism",
+            "content": {
+                "en-US": "Extreme sadistic tendencies."
+            }
+        },
+        {
+            "id": "w_specialwaterboard",
+            "content": {
+                "en-US": "Waterboarding with used bong water."
+            }
+        },
+        {
+            "id": "w_wronghole",
+            "content": {
+                "en-US": "The wrong hole.",
+                "de-DE": "Das falsche Loch."
+            }
+        },
+        {
+            "id": "w_goodslap",
+            "content": {
+                "en-US": "A good slap.",
+                "de-DE": "Ein guter Klaps."
+            }
+        },
+        {
+            "id": "w_nightshades",
+            "content": {
+                "en-US": "Wearing sunglasses at night.",
+                "de-DE": "Nachts eine Sonnenbrille tragen."
+            }
+        },
+        {
+            "id": "w_shortplunger",
+            "content": {
+                "en-US": "A toilet plunger with an uncomfortably short handle.",
+                "de-DE": "Eine Saugglocke mit einem unbequem kurzen Griff."
+            }
+        },
+        {
+            "id": "w_creepyloo",
+            "content": {
+                "en-US": "A toilet that is about to overflow, and you're powerless to stop it.",
+                "de-DE": "Eine Toilette, die kurz davor steht, überzulaufen, und du bist machtlos, sie zu soppen."
+            }
+        },
+        {
+            "id": "w_slimyonion",
+            "content": {
+                "en-US": "A wet onion.",
+                "de-DE": "Eine nasse Zwiebel."
+            }
+        },
+        {
+            "id": "w_smokealarm",
+            "content": {
+                "en-US": "A smoke alarm that just won't turn off."
+            }
+        },
+        {
+            "id": "w_hitleragain",
+            "content": {
+                "en-US": "Resurrecting Hitler."
+            }
+        },
+        {
+            "id": "w_naughtysanta",
+            "content": {
+                "en-US": "Waking up to Santa naked in your bed."
+            }
+        },
+        {
+            "id": "w_badsand",
+            "content": {
+                "en-US": "Sand in all the wrong places.",
+                "de-DE": "Sand an den falschen Stellen."
+            }
+        },
+        {
+            "id": "w_wowgirth",
+            "content": {
+                "en-US": "Incredible girth.",
+                "de-DE": "Ein unglaublicher Umfang."
+            }
+        },
+        {
+            "id": "w_snappysnap",
+            "content": {
+                "en-US": "Biting off his dick.",
+                "de-DE": "Seinen Schwanz abbeißen."
+            }
+        },
+        {
+            "id": "w_cummies",
+            "content": {
+                "en-US": "Daddy's cummies."
+            }
+        },
+        {
+            "id": "w_citrusteeth",
+            "content": {
+                "en-US": "Orange juice and toothpaste.",
+                "de-DE": "Orangensaft mit Zahnpasta."
+            }
+        },
+        {
+            "id": "w_willsmith",
+            "content": {
+                "en-US": "Will Smith.",
+                "de-DE": "Will Smith."
+            }
+        },
+        {
+            "id": "w_nakedneighbor",
+            "content": {
+                "en-US": "Seeing your neighbor masturbating and not being able to look away.",
+                "de-DE": "Deinen Nachbar beim Masturbieren sehen und nicht wegschauen können."
+            }
+        },
+        {
+            "id": "w_happygrunt",
+            "content": {
+                "en-US": "A grunt of satisfaction."
+            }
+        },
+        {
+            "id": "w_thanos",
+            "content": {
+                "en-US": "Thanos' snap."
+            }
+        },
+        {
+            "id": "w_goodolsex",
+            "content": {
+                "en-US": "Good ol'-fashioned missionary."
+            }
+        },
+        {
+            "id": "w_justtencents",
+            "content": {
+                "en-US": "Just ten cents a day.",
+                "de-DE": "Nur 10 Zent pro Tag."
+            }
+        },
+        {
+            "id": "w_badwet",
+            "content": {
+                "en-US": "Unexpected wetness.",
+                "de-DE": "Unerwartete Nässe."
+            }
+        },
+        {
+            "id": "w_altuniverse",
+            "content": {
+                "en-US": "An alternate universe."
+            }
+        },
+        {
+            "id": "w_casserole",
+            "content": {
+                "en-US": "Grandma's famous casserole."
+            }
+        },
+        {
+            "id": "w_whitevanman",
+            "content": {
+                "en-US": "A friendly old man waving from a white van."
+            }
+        },
+        {
+            "id": "w_donalddick",
+            "content": {
+                "en-US": "Donald Duck getting drilled in the ass by Goofy."
+            }
+        },
+        {
+            "id": "w_badtwinkie",
+            "content": {
+                "en-US": "A Twinkie filled with dog shit.",
+                "de-DE": "Ein Twinkie voller Hundescheiße."
+            }
+        },
+        {
+            "id": "w_fakedeath",
+            "content": {
+                "en-US": "Faking your death.",
+                "de-DE": "Deinen Tod vortauschen."
+            }
+        },
+        {
+            "id": "w_chernobyl",
+            "content": {
+                "en-US": "Chernobyl.",
+                "de-DE": "Tschernobyl."
+            }
+        },
+        {
+            "id": "w_waspholes",
+            "content": {
+                "en-US": "Wasps coming out of every orifice.",
+                "de-DE": "Wespen aus jeder Körperöffnung."
+            }
+        },
+        {
+            "id": "w_2gophers",
+            "content": {
+                "en-US": "Two gophers with raging boners.",
+                "de-DE": "Zwei Taschenratten mit markanten Ständern."
+            }
+        },
+        {
+            "id": "w_spaghetti",
+            "content": {
+                "en-US": "A steaming pile of spaghetti."
+            }
+        },
+        {
+            "id": "w_putinarms",
+            "content": {
+                "en-US": "Vladimir Putin's strong, muscular arms."
+            }
+        },
+        {
+            "id": "w_reverseshit",
+            "content": {
+                "en-US": "Shitting in reverse.",
+                "da-DK": "Rückwärts scheißen."
+            }
+        },
+        {
+            "id": "w_pearlyv",
+            "content": {
+                "en-US": "A vagina with teeth.",
+                "de-DE": "Eine Vagina mit Zähnen."
+            }
+        },
+        {
+            "id": "w_billymays",
+            "content": {
+                "en-US": "BILLY MAYS HERE WITH AN AMAZING NEW PRODUCT!",
+                "de-DE": "BILLY MAYS HIER MIT EINEM FANTASTISCHEN NEUEN PRODUKT!"
+            }
+        },
+        {
+            "id": "w_mjfoxsurgery",
+            "content": {
+                "en-US": "Michael J. Fox performing brain surgery."
+            }
+        },
+        {
+            "id": "w_vomitlaugh",
+            "content": {
+                "en-US": "Vomiting and laughing at the same time.",
+                "de-DE": "Gleichzeitig kotzen und lachen."
+            }
+        },
+        {
+            "id": "w_dogtonguewich",
+            "content": {
+                "en-US": "A sandwich filled with dog tongues.",
+                "de-DE": "Ein Sandwich voller Hundezungen."
+            }
+        },
+        {
+            "id": "w_youngman",
+            "content": {
+                "en-US": "A handsome young man with a lovely smile."
+            }
+        },
+        {
+            "id": "w_toothnails",
+            "content": {
+                "en-US": "Having teeth for fingernails.",
+                "de-DE": "Zähne für Fingernägel haben."
+            }
+        },
+        {
+            "id": "w_coldgravy",
+            "content": {
+                "en-US": "Cold gravy.",
+                "de-DE": "Kalte Bratensoße."
+            }
+        },
+        {
+            "id": "w_badreplacement",
+            "content": {
+                "en-US": "Replacing all the shampoo with hair remover.",
+                "de-DE": "All den Shampoo durch Haarentfernungsmittel ersetzen."
+            }
+        },
+        {
+            "id": "w_fastporn",
+            "content": {
+                "en-US": "A porn video playing at double speed.",
+                "de-DE": "Einen Porno mit doppelter Geschwindigkeit abspielen."
+            }
+        },
+        {
+            "id": "w_burninghairsmell",
+            "content": {
+                "en-US": "The smell of burning hair.",
+                "de-DE": "Der Geruch brennender Haare."
+            }
+        },
+        {
+            "id": "w_toohappydog",
+            "content": {
+                "en-US": "A dog that is so happy it pees everywhere.",
+                "de-DE": "Ein begeisterter Hund, der überall hin pinkelt."
+            }
+        },
+        {
+            "id": "w_shitfan",
+            "content": {
+                "en-US": "Shit <i>literally</i> hitting a fan."
+            }
+        },
+        {
+            "id": "w_earwaxballs",
+            "content": {
+                "en-US": "Earwax gumballs."
+            }
+        },
+        {
+            "id": "w_hairynips",
+            "content": {
+                "en-US": "Overly hairy areolas.",
+                "de-DE": "Übermäßig haarige Warzenhöfe."
+            }
+        },
+        {
+            "id": "w_pooprope",
+            "content": {
+                "en-US": "A turd dangling by one hair from a dog's quivering anus.",
+                "de-DE": "Ein Kackwurst, der an einem Haar an dem zitternden Anus eines Hundes baumelt."
+            }
+        },
+        {
+            "id": "w_pressurewasher",
+            "content": {
+                "en-US": "Sticking a pressure washer up your dick hole... for science!"
+            }
+        },
+        {
+            "id": "w_youfuckedup",
+            "content": {
+                "en-US": "The moment that you realized you fucked up."
+            }
+        },
+        {
+            "id": "w_musclebear",
+            "content": {
+                "en-US": "A smiling, anthropomorphic grizzly bear with bulging muscles and a piercing gaze."
+            }
+        },
+        {
+            "id": "w_cleanhumor",
+            "content": {
+                "en-US": "Clean, Christian humor.",
+                "de-DE": "Reiner, christlicher Humor."
+            }
+        },
+        {
+            "id": "w_colostomywine",
+            "content": {
+                "en-US": "A full colostomy bag disguised as boxed wine."
+            }
+        },
+        {
+            "id": "w_lotsababyoil",
+            "content": {
+                "en-US": "An obscene amount of baby oil."
+            }
+        },
+        {
+            "id": "w_deathtaxes",
+            "content": {
+                "en-US": "Death and taxes.",
+                "de-DE": "Tod und Steuern."
+            }
+        },
+        {
+            "id": "w_exclusivefootage",
+            "content": {
+                "en-US": "EXCLUSIVE bonus footage!",
+                "de-DE": "EXKLUSIVES Bonusfilmmaterial!"
+            }
+        },
+        {
+            "id": "w_prideandaccomp",
+            "content": {
+                "en-US": "Pride and accomplishment."
+            }
+        },
+        {
+            "id": "w_mirrorman",
+            "content": {
+                "en-US": "A perfectly symmetrical man who speaks only in palindromes."
+            }
+        },
+        {
+            "id": "w_salivaglass",
+            "content": {
+                "en-US": "A warm glass of spit.",
+                "de-DE": "Ein warmes Glas Speichel."
+            }
+        },
+        {
+            "id": "w_psvsmoothie",
+            "content": {
+                "en-US": "A piss, shit, and vomit smoothie.",
+                "de-DE": "Ein Pisse-Scheiße-Kotze-Smoothie."
+            }
+        },
+        {
+            "id": "w_strawsoulsuck",
+            "content": {
+                "en-US": "Sucking out someone's soul with a bendy straw."
+            }
+        },
+        {
+            "id": "w_dollarmeat",
+            "content": {
+                "en-US": "Dollar store meat.",
+                "de-DE": "Dollarladenfleisch."
+            }
+        },
+        {
+            "id": "w_gunfarts",
+            "content": {
+                "en-US": "Farts that sound like gunshots.",
+                "de-DE": "Fürze, die wie Schüsse klingen."
+            }
+        },
+        {
+            "id": "w_isismusic",
+            "content": {
+                "en-US": "ISIS recruitment videos with oddly catchy music."
+            }
+        },
+        {
+            "id": "w_kidsoldiers",
+            "content": {
+                "en-US": "Child soldiers.",
+                "de-DE": "Kindersoldaten."
+            }
+        },
+        {
+            "id": "w_tastyfetus",
+            "content": {
+                "en-US": "An aborted fetus that looks oddly appetizing."
+            }
+        },
+        {
+            "id": "w_loudassslap",
+            "content": {
+                "en-US": "Slapping that ass so hard the resulting shockwave shakes the whole house."
+            }
+        },
+        {
+            "id": "w_prettyman",
+            "content": {
+                "en-US": "A <i>very</i> attractive man with an amazingly toned ass."
+            }
+        },
+        {
+            "id": "w_electricsquirrel",
+            "content": {
+                "en-US": "A dead, smoldering squirrel stuck between two power lines."
+            }
+        },
+        {
+            "id": "w_blackhole",
+            "content": {
+                "en-US": "A black hole.",
+                "de-DE": "Ein schwarzes Loch."
+            }
+        },
+        {
+            "id": "w_godwhydidiwritethis",
+            "content": {
+                "en-US": "A massive, maggot-infested rectal prolapse oozing a swirling mixture of blood, pus, and shit.",
+                "de-DE": "Ein massiver, von Maden befallener Rektumprolaps, der eine wirbelnde Mischung aus Blut, Eiter und Scheiße hervorbringt."
+            }
+        },
+        {
+            "id": "w_macaronichoir",
+            "content": {
+                "en-US": "The sound of 30 people fondling cooked macaroni.",
+                "de-DE": "Das Geräusch von 30 Leuten beim Streicheln gekochtes Makkaroni."
+            }
+        },
+        {
+            "id": "w_loandefault",
+            "content": {
+                "en-US": "Defaulting on student loans."
+            }
+        },
+        {
+            "id": "w_steamrollerdeath",
+            "content": {
+                "en-US": "Being slowly crushed by a steamroller."
+            }
+        },
+        {
+            "id": "w_callherslut",
+            "content": {
+                "en-US": "Affectionately calling her a dirty slut."
+            }
+        },
+        {
+            "id": "w_eightdirtytalk",
+            "content": {
+                "en-US": "Eighth-grade levels of dirty talk."
+            }
+        },
+        {
+            "id": "w_uranus",
+            "content": {
+                "en-US": "Uranus."
+            }
+        },
+        {
+            "id": "w_smarterthan5g",
+            "content": {
+                "en-US": "Actually being smarter than a fifth grader."
+            }
+        },
+        {
+            "id": "w_waxdonofrio",
+            "content": {
+                "en-US": "A half-melted wax figure of Vincent D'Onofrio.",
+                "de-DE": "Eine halb geschmolzene Wachsfigur von Vincent D'Onofrio."
+            }
+        },
+        {
+            "id": "w_thesex",
+            "content": {
+                "en-US": "Having the Sex.",
+                "de-DE": "Den Sex haben."
+            }
+        },
+        {
+            "id": "w_angrytoilet",
+            "content": {
+                "en-US": "An angry toilet ejecting gallons of sewage at incredible speed."
+            }
+        },
+        {
+            "id": "w_fatalfart",
+            "content": {
+                "en-US": "Farting so hard that the blood vessels in your eyes burst."
+            }
+        },
+        {
+            "id": "w_coitussound",
+            "content": {
+                "en-US": "The unmistakable sound of coitus.",
+                "de-DE": "Das unverwechselbare Geräusch des Koitus."
+            }
+        },
+        {
+            "id": "w_vaselinepig",
+            "content": {
+                "en-US": "Rubbing an entire tub of Vaseline&trade; all over your body."
+            }
+        },
+        {
+            "id": "w_14candles",
+            "content": {
+                "en-US": "Inserting 14 lit candles into your anus.",
+                "de-DE": "14 brennende Kerzen in deinen Anus stecken."
+            }
+        },
+        {
+            "id": "w_toothypug",
+            "content": {
+                "en-US": "A pug with human teeth."
+            }
+        },
+        {
+            "id": "w_nottheass",
+            "content": {
+                "en-US": "Hearing someone yelling, \"Not the ass! NOT THE ASS!\"",
+                "de-DE": "Jemanden sagen hören, \"Nicht den Arsch! NICHT DEN ARSCH!\""
+            }
+        },
+        {
+            "id": "w_15turd",
+            "content": {
+                "en-US": "A 15-pound turd.",
+                "de-DE": "Eine 7-Kilo-Kackwurst."
+            }
+        },
+        {
+            "id": "w_cannedlolz",
+            "content": {
+                "en-US": "Canned laughter.",
+                "de-DE": "Lachkonserven."
+            }
+        },
+        {
+            "id": "w_overpricedshit",
+            "content": {
+                "en-US": "Overpriced, aggressively-marketed designer bullshit.",
+                "de-DE": "Überteuerte, aggressiv vermarktete Designer-Scheiße."
+            }
+        },
+        {
+            "id": "w_infgauntlet",
+            "content": {
+                "en-US": "The Infinity Gauntlet."
+            }
+        },
+        {
+            "id": "w_badcarmascot",
+            "content": {
+                "en-US": "An obnoxious, cringey car dealership mascot.",
+                "de-DE": "Ein abscheuliches, peinliches Autohaus-Maskottchen."
+            }
+        },
+        {
+            "id": "w_pg12",
+            "content": {
+                "en-US": "Being 12 years old and watching a PG-13 movie like a complete badass."
+            }
+        },
+        {
+            "id": "w_chilicondom",
+            "content": {
+                "en-US": "A condom full of chili."
+            }
+        },
+        {
+            "id": "w_chunkypb",
+            "content": {
+                "en-US": "Extra-chunky peanut butter.",
+                "de-DE": "Erdnussbutter mit ganzen Stücken."
+            }
+        },
+        {
+            "id": "w_foamass",
+            "content": {
+                "en-US": "Filling my mouth with expanding foam insulation."
+            }
+        },
+        {
+            "id": "w_blindingbeam",
+            "content": {
+                "en-US": "A blinding beam of light accompanied by heavenly music."
+            }
+        },
+        {
+            "id": "w_drsalt",
+            "content": {
+                "en-US": "Dr. Pepper's lesser-known brother, Dr. Salt.",
+                "de-DE": "Der weniger bekannte Bruder von Dr. Pepper, Dr. Salt."
+            }
+        },
+        {
+            "id": "w_smallparts",
+            "content": {
+                "en-US": "Small parts not suitable for children under three years."
+            }
+        },
+        {
+            "id": "w_4skinbucket",
+            "content": {
+                "en-US": "A bucket full of foreskins."
+            }
+        },
+        {
+            "id": "w_centersurprise",
+            "content": {
+                "en-US": "The surprise in the center."
+            }
+        },
+        {
+            "id": "w_spacedab",
+            "content": {
+                "en-US": "Dabbing in outer space."
+            }
+        },
+        {
+            "id": "w_beangrail",
+            "content": {
+                "en-US": "The Holy Grail of baked beans."
+            }
+        },
+        {
+            "id": "w_waldo",
+            "content": {
+                "en-US": "Waldo.",
+                "de-DE": "Waldo."
+            }
+        },
+        {
+            "id": "w_fingerbankrob",
+            "content": {
+                "en-US": "Robbing a bank with finger guns."
+            }
+        },
+        {
+            "id": "w_beandog",
+            "content": {
+                "en-US": "That talking dog from the baked beans commercials."
+            }
+        },
+        {
+            "id": "w_sadsexscene",
+            "content": {
+                "en-US": "Crying at a sex scene."
+            }
+        },
+        {
+            "id": "w_metric",
+            "content": {
+                "en-US": "The metric system."
+            }
+        },
+        {
+            "id": "w_supermargin",
+            "content": {
+                "en-US": "All the marginalized minorities combined together to form one unstoppable MEGA-Minority!"
+            }
+        },
+        {
+            "id": "w_chesticles",
+            "content": {
+                "en-US": "Chesticles.",
+                "de-DE": "Chesticles."
+            }
+        },
+        {
+            "id": "w_offandon",
+            "content": {
+                "en-US": "Turning it off and on again."
+            }
+        },
+        {
+            "id": "w_kimk",
+            "content": {
+                "en-US": "Kim Kardashian."
+            }
+        },
+        {
+            "id": "w_driedcorpse",
+            "content": {
+                "en-US": "A dessicated corpse."
+            }
+        },
+        {
+            "id": "w_notmuchreally",
+            "content": {
+                "en-US": "Not much to speak of."
+            }
+        },
+        {
+            "id": "w_oldschoolmedicine",
+            "content": {
+                "en-US": "An old-school home remedy made from molasses, ether, arsenic, and death.",
+                "de-DE": "Ein altmodisches Hausmittel aus Melasse, Äther, Arsen und Tod."
+            }
+        },
+        {
+            "id": "w_rundrugring",
+            "content": {
+                "en-US": "Running a massive multinational drug empire."
+            }
+        },
+        {
+            "id": "w_kidtradingcards",
+            "content": {
+                "en-US": "Using missing children ads as trading cards.",
+                "de-DE": "Vermisstenplakate wie Tauschkarten sammeln."
+            }
+        },
+        {
+            "id": "w_longergirhierdick",
+            "content": {
+                "en-US": "A longer, girthier dick than yours.",
+                "de-DE": "Ein langerer, dickerer Schwanz als deiner."
+            }
+        },
+        {
+            "id": "w_youngerself",
+            "content": {
+                "en-US": "My younger, dumber self.",
+                "de-DE": "Das jüngere, dümmere Ich."
+            }
+        },
+        {
+            "id": "w_freezedeath",
+            "content": {
+                "en-US": "Freezing to death."
+            }
+        },
+        {
+            "id": "w_siliconeimplants",
+            "content": {
+                "en-US": "Silicone-based implants."
+            }
+        },
+        {
+            "id": "w_weirddancinghousemen",
+            "content": {
+                "en-US": "Coming home to three buff, naked men breakdancing in your living room."
+            }
+        },
+        {
+            "id": "w_twerkshit",
+            "content": {
+                "en-US": "Twerking while shitting.",
+                "de-DE": "Twerken beim Scheißen."
+            }
+        },
+        {
+            "id": "w_sitsquish",
+            "content": {
+                "en-US": "Hearing a squishing noise when you sit down."
+            }
+        },
+        {
+            "id": "w_maxabsorb",
+            "content": {
+                "en-US": "Maximum absorption."
+            }
+        },
+        {
+            "id": "w_goodfistbump",
+            "content": {
+                "en-US": "A victorious fistbump."
+            }
+        },
+        {
+            "id": "w_cdlobster",
+            "content": {
+                "en-US": "A cross-dressing lobster."
+            }
+        },
+        {
+            "id": "w_crabscuttle",
+            "content": {
+                "en-US": "Scuttling away sideways like a crab."
+            }
+        },
+        {
+            "id": "w_mlm",
+            "content": {
+                "en-US": "Multi-level marketing."
+            }
+        },
+        {
+            "id": "w_goodmouthshit",
+            "content": {
+                "en-US": "Shitting into my mouth like the good little dirty whore you are."
+            }
+        },
+        {
+            "id": "w_dadmonsterdong",
+            "content": {
+                "en-US": "My dad's monster dong."
+            }
+        },
+        {
+            "id": "w_autismvaccine",
+            "content": {
+                "en-US": "A vaccine for autism."
+            }
+        },
+        {
+            "id": "w_forestautist",
+            "content": {
+                "en-US": "Ditching your autistic son in the forest."
+            }
+        },
+        {
+            "id": "w_catseatingher",
+            "content": {
+                "en-US": "A dead woman being slowly consumed by her 57 cats."
+            }
+        },
+        {
+            "id": "w_suddenbigscream",
+            "content": {
+                "en-US": "Breaking the silence with an ear-splitting, soul-shattering scream."
+            }
+        },
+        {
+            "id": "w_kidzboppeople",
+            "content": {
+                "en-US": "The unholy miscreants who listen to Kidz Bop."
+            }
+        },
+        {
+            "id": "w_lastvictim",
+            "content": {
+                "en-US": "My last victim.",
+                "de-DE": "Mein letztes Opfer."
+            }
+        },
+        {
+            "id": "w_abortiondestination",
+            "content": {
+                "en-US": "The place where all the aborted fetuses go."
+            }
+        },
+        {
+            "id": "w_incestgenerations",
+            "content": {
+                "en-US": "Five generations of incest."
+            }
+        },
+        {
+            "id": "w_autotunedtween",
+            "content": {
+                "en-US": "An autotuned tween \"singer\"."
+            }
+        },
+        {
+            "id": "w_faceofgod",
+            "content": {
+                "en-US": "The face of God himself."
+            }
+        },
+        {
+            "id": "w_pubeperm",
+            "content": {
+                "en-US": "Perming your pubes."
+            }
+        },
+        {
+            "id": "w_pizzazz",
+            "content": {
+                "en-US": "A little pizzazz."
+            }
+        },
+        {
+            "id": "w_naughtynaughtygirl",
+            "content": {
+                "en-US": "A naughty, naughty girl."
+            }
+        },
+        {
+            "id": "w_taintsweat",
+            "content": {
+                "en-US": "Taint sweat."
+            }
+        },
+        {
+            "id": "w_blueberryporn",
+            "content": {
+                "en-US": "Blueberry porn."
+            }
+        },
+        {
+            "id": "w_fornitedancelaw",
+            "content": {
+                "en-US": "Copyrighted dance moves."
+            }
+        },
+        {
+            "id": "w_perfectpreshumanear",
+            "content": {
+                "en-US": "A perfectly preserved human ear."
+            }
+        },
+        {
+            "id": "w_gleamingthorax",
+            "content": {
+                "en-US": "His gleaming thorax."
+            }
+        },
+        {
+            "id": "w_master",
+            "content": {
+                "en-US": "Master."
+            }
+        },
+        {
+            "id": "w_livestockworship",
+            "content": {
+                "en-US": "Livestock worshippers."
+            }
+        },
+        {
+            "id": "w_toomuchbutterwow",
+            "content": {
+                "en-US": "An disgusting amount of butter."
+            }
+        },
+        {
+            "id": "w_financialcompentitle",
+            "content": {
+                "en-US": "Being entitled to significant financial compensation."
+            }
+        },
+        {
+            "id": "w_spaghetbible",
+            "content": {
+                "en-US": "A hollowed-out Bible full of spaghetti."
+            }
+        },
+        {
+            "id": "w_transfurries",
+            "content": {
+                "en-US": "Transhumanist furries."
+            }
+        },
+        {
+            "id": "w_torsowormkid",
+            "content": {
+                "en-US": "An armless, legless child wriggling around like a sad little worm."
+            }
+        },
+        {
+            "id": "w_realvitruvian",
+            "content": {
+                "en-US": "The Vitruvian Man, but for real and he has three dicks."
+            }
+        },
+        {
+            "id": "w_bigmouthful",
+            "content": {
+                "en-US": "A big mouthful."
+            }
+        },
+        {
+            "id": "w_bootycall",
+            "content": {
+                "en-US": "A booty call."
+            }
+        },
+        {
+            "id": "w_fatpogoman",
+            "content": {
+                "en-US": "A hilariously fat man on a pogo stick."
+            }
+        },
+        {
+            "id": "w_beanyboi",
+            "content": {
+                "en-US": "Pouring beans into your child's waiting mouth."
+            }
+        },
+        {
+            "id": "w_rhinovagina",
+            "content": {
+                "en-US": "A rhinoceros' vagina."
+            }
+        },
+        {
+            "id": "w_angrypenisbite",
+            "content": {
+                "en-US": "Biting off a man's penis out of anger."
+            }
+        },
+        {
+            "id": "w_dbzincest",
+            "content": {
+                "en-US": "Fucking your cousin on your favorite Dragon Ball Z blanket."
+            }
+        },
+        {
+            "id": "w_fancyrimjob",
+            "content": {
+                "en-US": "Tongue-lashing the brown star."
+            }
+        },
+        {
+            "id": "w_cumtoast",
+            "content": {
+                "en-US": "Artisan cum toast."
+            }
+        },
+        {
+            "id": "w_catnutflick",
+            "content": {
+                "en-US": "Flicking your cat in the nuts."
+            }
+        },
+        {
+            "id": "w_centipeed",
+            "content": {
+                "en-US": "A centipede crawling up your urethra."
+            }
+        },
+        {
+            "id": "w_diarrheaslurp",
+            "content": {
+                "en-US": "Feverishly slurping diarrhea."
+            }
+        },
+        {
+            "id": "b_futureismeaningless",
+            "content": {
+                "en-US": "The future is meaningless, but ________ is now."
+            }
+        },
+        {
+            "id": "b_sciencetradeoff",
+            "content": {
+                "en-US": "Modern technology has finally made ________ possible, but it comes with the unfortunate tradeoff of ________."
+            },
+            "blanks": 2
+        },
+        {
+            "id": "b_conspiracycontroversy",
+            "content": {
+                "en-US": "What's been making waves in the conspiracy community?"
+            }
+        },
+        {
+            "id": "b_damnedifido",
+            "content": {
+                "en-US": "_________.\nDamned if you do, damned if you don't."
+            }
+        },
+        {
+            "id": "b_theydeserveit",
+            "content": {
+                "en-US": "I don't care what anyone else thinks... anybody who is ________ deserves ________!"
+            },
+            "blanks": 2
+        },
+        {
+            "id": "b_altlullaby",
+            "content": {
+                "en-US": "I was a difficult child; I absolutely wouldn't fall asleep without ________.",
+                "de-DE": "Ich war ein schwieriges Kind; ich würde ohne _________ absolut nicht einschlafen."
+            }
+        },
+        {
+            "id": "b_nightprayer",
+            "content": {
+                "en-US": "Every night, I pray for ________.\nAnd every morning, I'm sorely disappointed."
+            }
+        },
+        {
+            "id": "b_crimewitness",
+            "content": {
+                "en-US": "Officer, come quick! I just saw someone ________ and then run off!"
+            }
+        },
+        {
+            "id": "b_kojimagame",
+            "content": {
+                "en-US": "____________: a Hideo Kojima game."
+            }
+        },
+        {
+            "id": "b_noaliens",
+            "content": {
+                "en-US": "What's the real reason aliens haven't contacted us?"
+            }
+        },
+        {
+            "id": "b_whatscookin",
+            "content": {
+                "en-US": "Wow, that smells good! What are you cooking?",
+                "de-DE": "Das riecht aber gut! Was kochst du da?"
+            }
+        },
+        {
+            "id": "b_nobodyexpectsme",
+            "content": {
+                "en-US": "Nobody ever thought they'd see me ______. Well, today's the day I make it happen!",
+                "de-DE": "Niemand hätte je gedacht, dass sie mich ______ sehen würden. Nun, heute ist der Tag, an dem ich es möglich mache!"
+            },
+            "blanks": 1
+        },
+        {
+            "id": "b_walmartban",
+            "content": {
+                "en-US": "Why was I permanently banned from Walmart?",
+                "de-DE": "Warum wurde ich dauerhaft von Walmart ausgeschlossen?"
+            },
+            "blanks": 1
+        },
+        {
+            "id": "b_premaritalnono",
+            "content": {
+                "en-US": "My girlfriend firmly believes in no _______ before marriage.",
+                "de-DE": "Meine Freundin glaubt fest an kein _______ vor der Hochzeit."
+            },
+            "blanks": 1
+        },
+        {
+            "id": "b_distdrivingticket",
+            "content": {
+                "en-US": "Police are now handing out tickets to people for _______ while driving.",
+                "de-DE": "Die Polizei verteilt jetzt Strafzettel wegen _______ am Steuer."
+            }
+        },
+        {
+            "id": "b_doctorsagreethat",
+            "content": {
+                "en-US": "9 out of 10 doctors now agree that a daily dose of _______ may reduce the risk of heart disease."
+            }
+        },
+        {
+            "id": "b_personalhero",
+            "content": {
+                "en-US": "In my mind, anyone who is _______ is a true hero."
+            }
+        },
+        {
+            "id": "b_oneeasypayment",
+            "content": {
+                "en-US": "For just one easy payment of $19.95, you too can be a proud owner of _______!",
+                "de-DE": "Für nur eine einfache Zahlung von $19,95 können auch Sie ein stolzer Besitzer von _______ sein!"
+            }
+        },
+        {
+            "id": "b_whatsdaddydoing",
+            "content": {
+                "en-US": "Mommy, mommy! I just saw daddy and he was _______!",
+                "de-DE": "Mama, mama! Ich habe gerade Papa beim ________ gesehen!"
+            }
+        },
+        {
+            "id": "b_fbifindpackage",
+            "content": {
+                "en-US": "The FBI is investigating after the White House received a suspicious package addressed to the President that contained _______.",
+                "de-DE": "Das FBI untersucht, nachdem das Weiße Haus ein verdächtiges Paket an den Präsidenten erhalten hat, das _______ enthielt."
+            }
+        },
+        {
+            "id": "b_newschoolprogram",
+            "content": {
+                "en-US": "To meet new Department of Education requirements, US high schools now require freshmen to take a course on _______.",
+                "de-DE": "Um die neuen Anforderungen des Bildungsministeriums zu erfüllen, müssen Studienanfänger in den USA nun einen Kurs am _______ belegen."
+            }
+        },
+        {
+            "id": "b_autoproblems",
+            "content": {
+                "en-US": "This might sound crazy, but every time I start my car, the inside starts smelling like _______!"
+            }
+        },
+        {
+            "id": "b_frathazing",
+            "content": {
+                "en-US": "As part of their initiation, my local fraternity chapter forces new members to eat _______."
+            }
+        },
+        {
+            "id": "b_badaltegg",
+            "content": {
+                "en-US": "It might sound like a good idea, but I can tell you from experience that _______ makes a <i>terrible</i> egg substitute.",
+                "de-DE": "Es klingt vielleicht nach einer guten Idee, aber ich kann dir aus Erfahrung sagen, dass _______ einen <i>furchtbaren</i> Eiersatz macht."
+            }
+        },
+        {
+            "id": "b_sitonmylap",
+            "content": {
+                "en-US": "If you sit on my lap today, _______ a toy is the price you'll pay."
+            }
+        },
+        {
+            "id": "b_aftersex",
+            "content": {
+                "en-US": "After sex, my favorite thing to do is ________.",
+                "de-DE": "Nach dem Sex ist meine Lieblingsbeschäftigung ________."
+            }
+        },
+        {
+            "id": "b_morningsmell",
+            "content": {
+                "en-US": "Nothing's better than the smell of _______ in the morning.",
+                "de-DE": "Nichts ist besser als der Geruch von _______ am Morgen."
+            }
+        },
+        {
+            "id": "b_dategonebad",
+            "content": {
+                "en-US": "What's the most obvious sign that the date isn't going well?",
+                "de-DE": "Was ist das offensichtlichste Zeichen dafür, dass das Verabredung nicht gut läuft?"
+            }
+        },
+        {
+            "id": "b_airplanehostage",
+            "content": {
+                "en-US": "What's the one thing that could most likely save you in an airplane hijacking?"
+            }
+        },
+        {
+            "id": "b_heartwarming",
+            "content": {
+                "en-US": "Nothing is more heartwarming than seeing someone _______."
+            }
+        },
+        {
+            "id": "b_sadpresent",
+            "content": {
+                "en-US": "When Christmas morning came, the kids excitedly ran to their stockings, but were shocked find them filled with ________."
+            },
+            "blanks": 1
+        },
+        {
+            "id": "b_notmything",
+            "content": {
+                "en-US": "Despite what my friends might tell you, I have never liked ______."
+            },
+            "blanks": 1
+        },
+        {
+            "id": "b_partofbreakfast",
+            "content": {
+                "en-US": "______: A delicious part of a complete breakfast."
+            }
+        },
+        {
+            "id": "b_guiltypleasure",
+            "content": {
+                "en-US": "Every once in a while, I like to indulge in a little bit of _____."
+            }
+        },
+        {
+            "id": "b_miraclecure",
+            "content": {
+                "en-US": "For when you have a bad cold, ______ is a surprisingly effective home remedy."
+            }
+        },
+        {
+            "id": "b_disappointment",
+            "content": {
+                "en-US": "Nothing is more disappointing than expecting _______, but receiving _______."
+            },
+            "blanks": 2
+        },
+        {
+            "id": "b_partystopper",
+            "content": {
+                "en-US": "What never fails to ruin the party?"
+            }
+        },
+        {
+            "id": "b_badkidparty",
+            "content": {
+                "en-US": "What should you never bring to a child's birthday party?"
+            }
+        },
+        {
+            "id": "b_bannedcommercial",
+            "content": {
+                "en-US": "McDonald's received widespread backlash for its controversial TV ad featuring _______."
+            }
+        },
+        {
+            "id": "b_soupsurprise",
+            "content": {
+                "en-US": "What did I find in my soup?",
+                "de-DE": "Was habe ich in meiner Suppe entdeckt?"
+            }
+        },
+        {
+            "id": "b_santagift",
+            "content": {
+                "en-US": "What did Santa leave in my stocking this year?"
+            },
+            "blanks": 1
+        },
+        {
+            "id": "b_drugcraze",
+            "content": {
+                "en-US": "Local news stations are now reporting that the latest drug craze among teens is ________."
+            },
+            "blanks": 1
+        },
+        {
+            "id": "b_woody",
+            "content": {
+                "en-US": "There's ____ in my boot!",
+                "de-DE": "Da ist ____ in meinem Stiefel!"
+            },
+            "blanks": 1
+        },
+        {
+            "id": "b_deliveryservice",
+            "content": {
+                "en-US": "Finally! A service that delivers ____ right to your door."
+            }
+        },
+        {
+            "id": "b_behindthedoor",
+            "content": {
+                "en-US": "If ______ is behind that door, I'd be very okay with it."
+            }
+        },
+        {
+            "id": "b_xraysurprise",
+            "content": {
+                "en-US": "Doctors were shocked to find ____ on the patient's abdominal x-ray."
+            },
+            "blanks": 1
+        },
+        {
+            "id": "b_researchlink",
+            "content": {
+                "en-US": "Recent studies have revealed a strong link between ____ and ____."
+            },
+            "blanks": 2
+        },
+        {
+            "id": "b_omen",
+            "content": {
+                "en-US": "According to popular superstition, seeing ____ is considered a bad omen."
+            },
+            "blanks": 1
+        },
+        {
+            "id": "b_ramsey",
+            "content": {
+                "en-US": "On today's show, Chef Ramsey creates a spectacular new dish from ____ and ____."
+            },
+            "blanks": 2
+        },
+        {
+            "id": "b_securebank",
+            "content": {
+                "en-US": "Our bank boasts a state-of-the-art security system-- one of the first in the world to use ____ to keep your money safe."
+            },
+            "blanks": 1
+        },
+        {
+            "id": "b_murdermystery",
+            "content": {
+                "en-US": "Ted Bundy, the infamous serial killer, murdered 30 people using ________."
+            },
+            "blanks": 1
+        },
+        {
+            "id": "b_weddingtopic",
+            "content": {
+                "en-US": "The most unexpected thing to bring up in a wedding speech."
+            },
+            "blanks": 1
+        },
+        {
+            "id": "b_eulogy",
+            "content": {
+                "en-US": "What not to bring up during the eulogy."
+            },
+            "blanks": 1
+        },
+        {
+            "id": "b_dogmouth",
+            "content": {
+                "en-US": "What's that in my dog's mouth?!",
+                "de-DE": "Was ist im Mund meines Hundes?!"
+            },
+            "blanks": 1
+        },
+        {
+            "id": "b_mailbox",
+            "content": {
+                "en-US": "Nothing is worse than finding ____ in your mailbox.",
+                "de-DE": "Nichts ist schlimmer, als ____ im Briefkasten zu finden."
+            },
+            "blanks": 1
+        },
+        {
+            "id": "b_thinkofyou",
+            "content": {
+                "en-US": "Whenever I think of you, the fond memories of _______ come rushing back."
+            },
+            "blanks": 1
+        },
+        {
+            "id": "b_hottestpepper",
+            "content": {
+                "en-US": "Reaching over 2,000,000 Scoville units, the Carolina _______ holds the Guiness World Record for the hottest chili pepper."
+            },
+            "blanks": 1
+        },
+        {
+            "id": "b_blackhole",
+            "content": {
+                "en-US": "The gravitational pull from _______ is so strong, not even light can escape."
+            },
+            "blanks": 1
+        },
+        {
+            "id": "b_scarredparents",
+            "content": {
+                "en-US": "My parents were forever scarred when they walked in on me while I was _______."
+            },
+            "blanks": 1
+        },
+        {
+            "id": "b_bibleplagues",
+            "content": {
+                "en-US": "When the plagues came, the water turned to blood. The whole country was overrun by frogs. Then, all dust in the land became _______."
+            },
+            "blanks": 1
+        },
+        {
+            "id": "b_newemoji",
+            "content": {
+                "en-US": "Among the dozens of new emojis added by Unicode in 2018, the most controversial one depicts _______."
+            }
+        },
+        {
+            "id": "b_subtraction",
+            "content": {
+                "en-US": "_______ - _______ = _______."
+            },
+            "blanks": 3
+        },
+        {
+            "id": "b_badlisa",
+            "content": {
+                "en-US": "Lisa had always been a bit withdrawn, but it came as a shock to her neighbors when she was arrested for ________."
+            }
+        },
+        {
+            "id": "b_strangeaddiction",
+            "content": {
+                "en-US": "Today on <i>My Strange Addiction</i>: Meet Laura, a woman who can't stop ________."
+            }
+        },
+        {
+            "id": "b_bucketlist",
+            "content": {
+                "en-US": "My bucket list:\n- Travel the world.\n- Go skydiving.\n- ________."
+            }
+        },
+        {
+            "id": "b_strangevideofile",
+            "content": {
+                "en-US": "Hello, tech support? I found a weird file on my computer named _______.mp4.\nShould I be worried?"
+            }
+        }
+    ]
+}

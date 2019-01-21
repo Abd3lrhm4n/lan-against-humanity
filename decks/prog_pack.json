@@ -1,0 +1,188 @@
+{
+    "id": "programmer_pack",
+    "name": "Programmer Pack",
+    "author": "Nicholas Fleck, Tamme Schichler",
+    "cards": [
+        {
+            "id": "w_nan",
+            "content": {
+                "en-US": "NaN"
+            }
+        },
+        {
+            "id": "w_undefined",
+            "content": {
+                "en-US": "undefined"
+            }
+        },
+        {
+            "id": "w_intoverflow",
+            "content": {
+                "en-US": "Integer overflow."
+            }
+        },
+        {
+            "id": "w_toomanydeps",
+            "content": {
+                "en-US": "40 fucking dependencies."
+            }
+        },
+        {
+            "id": "w_greeksemi",
+            "content": {
+                "en-US": "Replacing their semicolons with Greek question marks."
+            }
+        },
+        {
+            "id": "w_java",
+            "content": {
+                "en-US": "The Java programming language."
+            }
+        },
+        {
+            "id": "w_floatingpointdeath",
+            "content": {
+                "en-US": "Getting all wobbly from floating-point precision loss."
+            }
+        },
+        {
+            "id": "w_cpp",
+            "content": {
+                "en-US": "The festering assemblage of horrors that is C++."
+            }
+        },
+        {
+            "id": "w_aprilfoolrfcs",
+            "content": {
+                "en-US": "April Fools RFCs."
+            }
+        },
+        {
+            "id": "w_vsupdate",
+            "content": {
+                "en-US": "A 4GB Visual Studio update."
+            }
+        },
+        {
+            "id": "w_bfprodcode",
+            "content": {
+                "en-US": "Production code written in Brainfuck."
+            }
+        },
+        {
+            "id": "w_stackoverflowpaste",
+            "content": {
+                "en-US": "Copying and pasting code from Stack Overflow."
+            }
+        },
+        {
+            "id": "w_jsdesigners",
+            "content": {
+                "en-US": "The sick fucks who designed JavaScript."
+            }
+        },
+        {
+            "id": "w_base64layers",
+            "content": {
+                "en-US": "Three layers of nested Base64."
+            }
+        },
+        {
+            "id": "w_schlinkert",
+            "content": {
+                "en-US": "Jon Schlinkert."
+            }
+        },
+        {
+            "id": "w_blockchain",
+            "content": {
+                "en-US": "\"Blockchain\"."
+            }
+        },
+        {
+            "id": "w_phpconventions",
+            "content": {
+                "en-US": "PHP's schizophrenic naming conventions."
+            }
+        },
+        {
+            "id": "w_sweardebug",
+            "content": {
+                "en-US": "Printing swear words as debug traces."
+            }
+        },
+        {
+            "id": "w_redditmarkovchain",
+            "content": {
+                "en-US": "A Markov chain trained on every Reddit comment."
+            }
+        },
+        {
+            "id": "w_ie7compat",
+            "content": {
+                "en-US": "Backwards compatability with Internet Explorer 7."
+            }
+        },
+        {
+            "id": "w_stupidcsdegree",
+            "content": {
+                "en-US": "Blowing $40,000 on a Computer Science degree."
+            }
+        },
+        {
+            "id": "w_racecondition",
+            "content": {
+                "en-US": "A race condition."
+            }
+        },
+        {
+            "id": "w_drunkprs",
+            "content": {
+                "en-US": "Submitting pull requests while drunk."
+            }
+        },
+        {
+            "id": "w_whatsjscript",
+            "content": {
+                "en-US": "Whatever JScript is."
+            }
+        },
+        {
+            "id": "w_nakedprogramming",
+            "content": {
+                "en-US": "Programming naked."
+            }
+        },
+        {
+            "id": "b_weirdcodebug",
+            "content": {
+                "en-US": "What's causing this weird bug in my code?"
+            }
+        },
+        {
+            "id": "b_compilererror",
+            "content": {
+                "en-US": "I can't figure out this compiler error... it says I'm missing ________.dll, but I don't even use that!"
+            }
+        },
+        {
+            "id": "b_netexception",
+            "content": {
+                "en-US": "An unhandled exception of type System.________Exception has occurred in ________.exe."
+            },
+            "blanks": 2
+        },
+        {
+            "id": "b_exestoppedworking",
+            "content": {
+                "en-US": "________.exe has stopped working."
+            }
+        },
+        {
+            "id": "b_gitcommit",
+            "content": {
+                "en-US": "My last Git commit message: \"Added _________.\""
+            }
+        }
+    ]
+}

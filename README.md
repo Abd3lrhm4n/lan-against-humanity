@@ -35,7 +35,7 @@ You need Visual Studio 2017 and .NET Framework 4.7.2.
 Open the `LahServer` project in Visual Studio and build it.
 
 The build will contain copies of the `decks` and `web_content` folders.
-It also contains a `settings.json` file that contains the server settings. See below how for to configure this file.
+It also contains a `settings.json` file that contains the server settings. See below for how to configure this file.
 
 After building, run LahServer.exe to start the server.
 

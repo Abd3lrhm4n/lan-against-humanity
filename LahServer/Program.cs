@@ -21,7 +21,7 @@ namespace LahServer
                 Converters = new List<JsonConverter>() { new CardConverter() }
             };
 
-            var decks = new List<Deck>();
+            var decks = new List<Pack>();
 
 			// Load the settings
 			var settings = LahSettings.FromFile("settings.json");
@@ -31,7 +31,7 @@ namespace LahServer
             {
                 try
                 {
-                    var deck = JsonConvert.DeserializeObject<Deck>(File.ReadAllText(deckPath));
+                    var deck = JsonConvert.DeserializeObject<Pack>(File.ReadAllText(deckPath));
                     decks.Add(deck);
                 }
                 catch (Exception ex)
@@ -48,7 +48,7 @@ namespace LahServer
 			Console.WriteLine($"Perma-Czar: {settings.PermanentCzar}");
 			Console.WriteLine($"Cards: {_game.BlackCardCount + _game.WhiteCardCount} ({_game.WhiteCardCount}x white, {_game.BlackCardCount}x black)");
 			Console.WriteLine();
-			Console.WriteLine($"Decks:\n{decks.Select(d => $"        [{d}]").Aggregate((c, n) => $"{c}\n{n}")}");
+			Console.WriteLine($"Packs:\n{decks.Select(d => $"        [{d}]").Aggregate((c, n) => $"{c}\n{n}")}");
 			Console.WriteLine("\n=================================\n");
 
 			_game.GameStateChanged += OnGameStateChanged;

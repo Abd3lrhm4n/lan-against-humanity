@@ -13,7 +13,7 @@ namespace LahServer.Game
         [JsonProperty("id")]
         public string ID { get; internal set; }
 
-        public Deck Owner { get; internal set; }
+        public Pack Owner { get; internal set; }
 
 		public bool IsCustom { get; private set; }
 

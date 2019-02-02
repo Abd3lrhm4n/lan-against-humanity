@@ -7,7 +7,7 @@
 	"blank_cards": 3,
 	"round_end_timeout": 5000,
 	"game_end_timeout": 30000,
-	"max_points": 30,
+	"max_points": 5,
 	"perma_czar": false,
 	"afk_time_seconds": 600,
 	"afk_recovery_time_seconds": 90,

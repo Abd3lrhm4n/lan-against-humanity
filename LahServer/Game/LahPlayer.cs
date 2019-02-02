@@ -16,6 +16,7 @@ namespace LahServer.Game
 	// TODO: Develop pattern for combining *Changed events to reduce unnecessary client updates
 	public sealed class LahPlayer
 	{
+		private readonly List<RoundPlay> _prevPlays;
 		private readonly HashList<WhiteCard> _hand;
 		private readonly HashList<WhiteCard> _selectedCards;
 		private int _score;
@@ -37,6 +38,7 @@ namespace LahServer.Game
 			Id = id;
 			_hand = new HashList<WhiteCard>();
 			_selectedCards = new HashList<WhiteCard>();
+			_prevPlays = new List<RoundPlay>();
 		}
 
 		public string Name
@@ -159,6 +161,28 @@ namespace LahServer.Game
 			}
 		}
 
+		internal void SaveCurrentPlay(bool winning)
+		{
+			var play = new RoundPlay(this, _selectedCards, Game.CurrentBlackCard)
+			{
+				Winning = winning
+			};
+			_prevPlays.Add(play);
+		}
+
+		public IEnumerable<RoundPlay> GetPreviousPlays()
+		{
+			foreach(var play in _prevPlays)
+			{
+				yield return play;
+			}
+		}
+
+		public void ClearPreviousPlays()
+		{
+			_prevPlays.Clear();
+		}
+
 		/// <summary>
 		/// Enumerates the player's currently selected cards.
 		/// </summary>
@@ -170,6 +194,11 @@ namespace LahServer.Game
 		/// </summary>
 		public bool IsSelectionValid => Game.CurrentBlackCard.BlankCount > 0 && _selectedCards.Count > 0 && _selectedCards.Count == Game.CurrentBlackCard.BlankCount;
 
+		/// <summary>
+		/// Indicates whether the player has the specified white card.
+		/// </summary>
+		/// <param name="card">The card to look for.</param>
+		/// <returns></returns>
 		public bool HasWhiteCard(WhiteCard card) => _hand.Contains(card);
 
 		/// <summary>

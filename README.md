@@ -85,7 +85,7 @@ I really don't recommend it. It's only designed to host one game at a time. It a
 
 ### Your webdev skills suck! I could do so much better!
 
-Isn't that the great thing about open source?
+Isn't that the great thing about open source software?
 
 ### You should use React/Angular/Bootstrap/etc.
 

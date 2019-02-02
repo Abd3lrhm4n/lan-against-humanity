@@ -66,18 +66,22 @@
     <Compile Include="Game\BlackCard.cs" />
     <Compile Include="Game\Card.cs" />
     <Compile Include="Game\Converters\CardConverter.cs" />
-    <Compile Include="Game\Deck.cs" />
+    <Compile Include="Game\Pack.cs" />
     <Compile Include="Game\LahGame.cs" />
     <Compile Include="Game\LahPlayer.cs" />
     <Compile Include="Game\NameAttribute.cs" />
     <Compile Include="Game\StringUtilities.cs" />
+    <Compile Include="Game\Trophies\Trophy.cs" />
+    <Compile Include="Game\Trophies\TrophyRequirement.cs" />
     <Compile Include="HashList.cs" />
     <Compile Include="LahClientConnection.cs" />
     <Compile Include="Game\WhiteCard.cs" />
     <Compile Include="LahSettings.cs" />
+    <Compile Include="LocalizedString.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="LahServer.cs" />
+    <Compile Include="Game\RoundPlay.cs" />
     <Compile Include="Web\IndexModule.cs" />
     <Compile Include="Web\LahBootstrapper.cs" />
   </ItemGroup>
@@ -88,9 +92,7 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Game\Trophies\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>rmdir /s /q "$(TargetDir)web_content"

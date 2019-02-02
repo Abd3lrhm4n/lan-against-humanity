@@ -2176,6 +2176,14 @@
             "blanks": 1
         },
         {
+            "id": "b_moneycanneverbuy",
+            "content": {
+                "en-US": "What can money never buy?",
+                "de-DE": "Was kann man nie kaufen?"
+            },
+            "blanks": 1
+        },
+        {
             "id": "b_drugcraze",
             "content": {
                 "en-US": "Local news stations are now reporting that the latest drug craze among teens is ________."
@@ -2226,14 +2234,14 @@
         {
             "id": "b_ramsey",
             "content": {
-                "en-US": "On today's show, Chef Ramsey creates a spectacular new dish from ____ and ____."
+                "en-US": "On today's show, Chef Ramsey will create a spectacular new dish using ______ and ______."
             },
             "blanks": 2
         },
         {
             "id": "b_securebank",
             "content": {
-                "en-US": "Our bank boasts a state-of-the-art security system-- one of the first in the world to use ____ to keep your money safe."
+                "en-US": "Our bank boasts a state-of-the-art security system&ndash; one of the first in the world to use ____ to keep your money safe."
             },
             "blanks": 1
         },
@@ -2252,9 +2260,9 @@
             "blanks": 1
         },
         {
-            "id": "b_eulogy",
+            "id": "b_burialbonus",
             "content": {
-                "en-US": "What not to bring up during the eulogy."
+                "en-US": "To honor his dying wish, my great-grandfather was buried with ________ in his coffin."
             },
             "blanks": 1
         },
@@ -2303,6 +2311,13 @@
             "blanks": 1
         },
         {
+            "id": "b_punishmentnowreward",
+            "content": {
+                "en-US": "What is a punishment as a child but a reward as an adult?"
+            },
+            "blanks": 1
+        },
+        {
             "id": "b_bibleplagues",
             "content": {
                 "en-US": "When the plagues came, the water turned to blood. The whole country was overrun by frogs. Then, all dust in the land became _______."
@@ -2344,6 +2359,26 @@
             "id": "b_strangevideofile",
             "content": {
                 "en-US": "Hello, tech support? I found a weird file on my computer named _______.mp4.\nShould I be worried?"
+            }
+        },
+        {
+            "id": "b_artschoolgrad",
+            "content": {
+                "en-US": "Now that I've graduated from art school, I can finally be ________!"
+            }
+        },
+        {
+            "id": "b_specialfather",
+            "content": {
+                "en-US": "Any man can be a father, but it takes someone special to be ________.",
+                "de-DE": "Jeder Mann kann ein Vater sein, aber es braucht jemanden Besonderen, um ________ zu sein."
+            }
+        },
+        {
+            "id": "b_newlawban",
+            "content": {
+                "en-US": "In five years, a new law will be passed that bans _________.",
+                "de-DE": "In fünf Jahren wird ein neues Gesetz verabschiedet werden, das ________ verbietet."
             }
         }
     ]

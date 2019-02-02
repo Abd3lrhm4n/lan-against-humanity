@@ -88,7 +88,7 @@ namespace LahServer.Game
 		// Raised when a round has ended
 		public event RoundEndedEventDelegate RoundEnded;
 
-		public LahGame(IEnumerable<Deck> decks, LahSettings settings)
+		public LahGame(IEnumerable<Pack> decks, LahSettings settings)
 		{
 			Settings = settings;
 			_whiteDrawPile = new HashList<WhiteCard>();
@@ -134,6 +134,7 @@ namespace LahServer.Game
 				{
 					player.DiscardHand();
 					player.DiscardSelection();
+					player.ClearPreviousPlays();
 				}
 
 				// Reset the draw pile and shuffle it
@@ -182,7 +183,7 @@ namespace LahServer.Game
 
 		private void EndGame()
 		{
-			lock(_allPlayersSync)
+			lock (_allPlayersSync)
 			{
 				Stage = GameStage.GameEnd;
 				GameEndTimeoutAsync();
@@ -191,7 +192,7 @@ namespace LahServer.Game
 
 		private void NextJudge()
 		{
-			lock(_allPlayersSync)
+			lock (_allPlayersSync)
 			{
 				var judge = Judge;
 				int n = PlayerCount;
@@ -230,7 +231,7 @@ namespace LahServer.Game
 					if (assholes.Length > 0 && _rng.Next(0, 2) == 0)
 					{
 						int offset = _rng.Next(assholes.Length);
-						for(int i = 0; i < assholes.Length; i++)
+						for (int i = 0; i < assholes.Length; i++)
 						{
 							int index = (offset + i) % assholes.Length;
 							// Ignore AFK assholes
@@ -295,10 +296,10 @@ namespace LahServer.Game
 		/// <returns></returns>
 		public IEnumerable<LahPlayer> GetWinningPlayers()
 		{
-			lock(_allPlayersSync)
+			lock (_allPlayersSync)
 			{
 				int maxScore = _players.Max(p => p.Score);
-				foreach(var player in _players.Where(p => p.Score == maxScore))
+				foreach (var player in _players.Where(p => p.Score == maxScore))
 				{
 					yield return player;
 				}
@@ -422,9 +423,9 @@ namespace LahServer.Game
 			var namePreSan = requestedName?.Trim() ?? DefaultPlayerName;
 			bool asshole = false;
 			var sanitizedName = StringUtilities.SanitizeClientString(
-				namePreSan, 
-				Settings.MaxPlayerNameLength, 
-				ref asshole, 
+				namePreSan,
+				Settings.MaxPlayerNameLength,
+				ref asshole,
 				c => !Char.IsControl(c) && (Char.IsLetterOrDigit(c) || PlayerNameCharExceptions.Contains(c)));
 
 			player.IsAsshole |= asshole;
@@ -603,11 +604,8 @@ namespace LahServer.Game
 				if (Stage == GameStage.RoundInProgress && player.IsSelectionValid)
 				{
 					Console.WriteLine($"{player} selected: {selection.Select(c => c.IsCustom ? $"(Custom) {c.GetContent("en-US")}" : c.ToString()).Aggregate((c, n) => $"{c}, {n}")}");
-
 					CheckRoundPlays();
-
 					Deal(player);
-
 					RaiseStateChanged();
 				}
 			}
@@ -663,11 +661,13 @@ namespace LahServer.Game
 				case GameStage.RoundEnd:
 					if (oldStage == GameStage.JudgingCards)
 					{
+						SaveRoundPlays();
 						UpdateScoreForWinningPlay();
 						RoundEndTimeoutAsync();
 					}
 					break;
 				case GameStage.GameEnd:
+					GameEndTimeoutAsync();
 					break;
 				case GameStage.GameStarting:
 					ClearRoundPlays();
@@ -678,11 +678,22 @@ namespace LahServer.Game
 			RaiseStateChanged();
 		}
 
+		private void SaveRoundPlays()
+		{
+			lock(_allPlayersSync)
+			{
+				foreach(var player in _players)
+				{
+					player.SaveCurrentPlay(RoundWinner == player);
+				}
+			}
+		}
+
 		private void UpdateScoreForWinningPlay()
 		{
 			var winningPlayer = RoundWinner;
 			if (winningPlayer == null) return;
-			winningPlayer.AddPoints(1); // TODO: Make points configurable
+			winningPlayer.AddPoints(1);
 		}
 
 		private async void RoundEndTimeoutAsync()
@@ -695,8 +706,9 @@ namespace LahServer.Game
 
 			if (Stage == GameStage.RoundEnd && _roundNum == roundNumForTimeout)
 			{
-				lock(_allPlayersSync)
+				lock (_allPlayersSync)
 				{
+					// Check if any of the players have reached the winning score
 					if (_players.Any(p => p.Score >= Settings.MaxPoints))
 					{
 						EndGame();
@@ -753,20 +765,11 @@ namespace LahServer.Game
 
 		#region Event Raisers
 
-		private void RaiseRoundStarted()
-		{
-			RoundStarted?.Invoke();
-		}
+		private void RaiseRoundStarted() => RoundStarted?.Invoke();
 
-		private void RaiseStateChanged()
-		{
-			GameStateChanged?.Invoke();
-		}
+		private void RaiseStateChanged() => GameStateChanged?.Invoke();
 
-		private void RaisePlayersChanged()
-		{
-			PlayersChanged?.Invoke();
-		}
+		private void RaisePlayersChanged() => PlayersChanged?.Invoke();
 
 		private void RaisePlayerJoined(LahPlayer p)
 		{
@@ -780,10 +783,7 @@ namespace LahServer.Game
 			OnPlayerCountChanged();
 		}
 
-		private void RaiseRoundEnded(int round, LahPlayer winner)
-		{
-			RoundEnded?.Invoke(round, winner);
-		}
+		private void RaiseRoundEnded(int round, LahPlayer winner) => RoundEnded?.Invoke(round, winner);
 
 		private void RaiseStageChanged(in GameStage oldStage, in GameStage currentStage) => StageChanged?.Invoke(oldStage, currentStage);
 

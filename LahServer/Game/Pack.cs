@@ -11,9 +11,9 @@ using System.Threading.Tasks;
 namespace LahServer.Game
 {
     [JsonObject(MemberSerialization = MemberSerialization.OptIn)]
-    public sealed class Deck
+    public sealed class Pack
     {
-        private const string DefaultName = "Untitled Deck";
+        private const string DefaultName = "Untitled Pack";
 
         private readonly Dictionary<string, BlackCard> _blackCards;
         private readonly Dictionary<string, WhiteCard> _whiteCards;
@@ -25,7 +25,7 @@ namespace LahServer.Game
         [DefaultValue(DefaultName)]
         public string Name { get; private set; } = DefaultName;
 
-        public Deck()
+        public Pack()
         {
             _blackCards = new Dictionary<string, BlackCard>();
             _whiteCards = new Dictionary<string, WhiteCard>();
@@ -60,6 +60,6 @@ namespace LahServer.Game
 
         public IEnumerable<Card> GetAllCards() => _cards.AsEnumerable();
 
-        public override string ToString() => $"{Name} ({_cards.Count})";
+        public override string ToString() => $"{Name} ({_cards.Count} cards)";
     }
 }

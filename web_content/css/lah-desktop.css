@@ -447,6 +447,8 @@ card .pick .num {
     box-sizing: initial !important;
 }
 
+/* CARD RIBBON */
+
 card .ribbon {
     position: absolute;
     bottom: 0;

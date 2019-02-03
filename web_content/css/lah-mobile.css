@@ -473,35 +473,50 @@
         white-space: nowrap;
         box-sizing: initial !important;
     }
-    
-    card .logo {
+
+    /* CARD RIBBON */
+
+    card .ribbon {
         position: absolute;
-        left: 1.5rem;
-        bottom: 1.25rem;
-        font-size: 42%;
-        font-weight: 600;
-        text-rendering: optimizeLegibility;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 64px;
+        overflow: hidden;
+        font-weight: 500;
+        border-radius: 0 0 calc(var(--card-border-radius) - 2px) calc(var(--card-border-radius) - 2px);
     }
     
-    card .logo::before {
-        content: "";
-        background-image: url("../img/lah-logo.png");
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: center;
-        image-rendering: optimizeQuality;
-        transform: translate(-2px, 8px);
-        min-width: 24px;
-        min-height: 24px;
-        display: inline-block;
+    card .ribbon:after {
+        position: absolute;
+        left: 0;
+        top: 40px;
+        right: 0;
+        height: 60px;
+        content: attr(data-packname);
+        font-size: 11pt;    
+        background-color: black;
+        background-size: 100%;
+        padding: 8px 15px;
+        text-align: left;
+        transform-origin: left top;
+        transform: rotate(45deg);
+        transition: transform .2s, color .2s, background-size .2s;
+        border-left: none !important;
+        background-clip: padding-box;
     }
     
-    card .logo::after {
-        content: "LAN Against Humanity";
+    card .ribbon:not(:hover):after {
+        color: rgba(0,0,0,0) !important;
     }
     
-    card .pick+.logo::after {
-        content: "LAH";
+    card .ribbon:hover:after {
+        color: #fff;
+        transform: rotate(0deg) translateY(-10px);
+    }
+    
+    card .ribbon:hover+.pick {
+        opacity: 0;
     }
     
     card[black] {

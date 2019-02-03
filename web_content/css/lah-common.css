@@ -287,3 +287,9 @@ card[black] .ribbon[data-packaccent=black]:after {
     background: #fff;
     border: 2px solid black;
 }
+
+.ribbon[data-packaccent=headache]:after {
+    background: repeating-linear-gradient(115deg, #000, #000 4px, #0f0 4px, #f0f 6px);
+    color: #fff !important;
+    font-weight: 900;
+}

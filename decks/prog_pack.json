@@ -1,6 +1,7 @@
 {
     "id": "programmer_pack",
     "name": "Programmer Pack",
+    "accent": "vs",
     "author": "Nicholas Fleck, Tamme Schichler",
     "cards": [
         {

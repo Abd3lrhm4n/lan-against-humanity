@@ -14,6 +14,7 @@ namespace LahServer.Game
     public sealed class Pack
     {
         private const string DefaultName = "Untitled Pack";
+		private const string DefaultId = "untitled";
 
         private readonly Dictionary<string, BlackCard> _blackCards;
         private readonly Dictionary<string, WhiteCard> _whiteCards;
@@ -24,6 +25,13 @@ namespace LahServer.Game
         [JsonProperty("name", DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate)]
         [DefaultValue(DefaultName)]
         public string Name { get; private set; } = DefaultName;
+
+		[JsonProperty("id", DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate)]
+		[DefaultValue(DefaultId)]
+		public string Id { get; private set; } = DefaultId;
+
+		[JsonProperty("accent", DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate)]
+		public string Accent { get; private set; }
 
         public Pack()
         {
@@ -60,6 +68,6 @@ namespace LahServer.Game
 
         public IEnumerable<Card> GetAllCards() => _cards.AsEnumerable();
 
-        public override string ToString() => $"{Name} ({_cards.Count} cards)";
+        public override string ToString() => $"{Name} [{Id}] ({_cards.Count} cards)";
     }
 }

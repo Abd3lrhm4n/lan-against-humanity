@@ -11,5 +11,6 @@
 	"perma_czar": false,
 	"afk_time_seconds": 600,
 	"afk_recovery_time_seconds": 90,
-	"content_exclude": []
+	"content_exclude": [],
+	"enable_trophies": true
 }

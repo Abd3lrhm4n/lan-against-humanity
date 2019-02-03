@@ -397,6 +397,7 @@ card {
     max-height: var(--card-height) !important;
     min-height: var(--card-height) !important;
     font-size: 14.5pt;
+    font-weight: 600
 }
 
 card.placeholder {
@@ -422,6 +423,7 @@ card .pick {
     font-size: 0.75em;
     right: 1.45rem;
     bottom: 1.5rem;
+    transition: opacity .2s;
 }
 
 card .pick::before {
@@ -433,7 +435,7 @@ card .pick .num {
     display: inline-block;
     text-align: center;
     line-height: .9em;
-    font-weight: 900;
+    font-weight: 600;
     font-size: 1.2em;
     background: white;
     border: 2px solid white;
@@ -445,44 +447,59 @@ card .pick .num {
     box-sizing: initial !important;
 }
 
-card .logo {
+card .ribbon {
     position: absolute;
-    left: 1.5rem;
-    bottom: 1.75rem;
-    font-size: 42%;
-    font-weight: 600;
-    text-rendering: optimizeLegibility;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 64px;
+    overflow: hidden;
+    font-weight: 500;
+    border-radius: 0 0 calc(var(--card-border-radius) - 2px) calc(var(--card-border-radius) - 2px);
 }
 
-card .logo::before {
-    content: "";
-    background-image: url("../img/lah-logo.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    image-rendering: optimizeQuality;
-    transform: translate(-2px, 8px);
-    min-width: 30px;
-    min-height: 30px;
-    display: inline-block;
+card .ribbon:after {
+    position: absolute;
+    left: 0;
+    top: 40px;
+    right: 0;
+    height: 60px;
+    content: attr(data-packname);
+    font-size: 11pt;    
+    background-color: black;
+    background-size: 100%;
+    padding: 8px 15px;
+    text-align: left;
+    transform-origin: left top;
+    transform: rotate(45deg);
+    transition: transform .2s, color .2s, background-size .2s;
+    border-left: none !important;
+    background-clip: padding-box;
 }
 
-card .logo::after {
-    content: "LAN Against Humanity";
+card .ribbon:not(:hover):after {
+    color: rgba(0,0,0,0) !important;
 }
 
-card .pick+.logo::after {
-    content: "LAH";
+card .ribbon:hover:after {
+    color: #fff;
+    transform: rotate(0deg) translateY(-10px);
+}
+
+card .ribbon:hover+.pick {
+    opacity: 0;
 }
 
 card[black] {
     background-color: black;
     color: white;
+    font-weight: 300;
 }
 
 card[white] {
     background-color: #f6f6f6;
     color: black;
+    font-weight: 500;
 }
 
 card[data-card="blank"] > .blank-card-text-container {
@@ -500,6 +517,7 @@ card[data-card="blank"] > .blank-card-text-container {
 
 card[data-card="blank"] > .blank-card-text-container .blank-card-text {
     font-size: inherit !important;
+    font-weight: 500;
     line-height: inherit !important;
     resize: none;
     outline: none;
@@ -517,13 +535,14 @@ card[data-card="blank"] .blank-card-text-container:hover {
     border: 2px dashed #ccc;
 }
 
-card[data-card="blank"] .blank-card-text, card[data-card^="custom:"] {
-    font-family: "Comic Sans MS", "Helvetica", sans-serif !important;
+card[data-card="blank"] .blank-card-text::placeholder {
+    font-family: "LAH", sans-serif !important;
 }
 
-card[data-card="blank"] .blank-card-text::placeholder {
-    font-family: "Helvetica", sans-serif;
+card[data-card="blank"] .blank-card-text, card[data-card^="custom:"] {
+    font-family: "Comic Sans MS", sans-serif !important;
 }
+
 
 /* CARD GROUPS */
 
@@ -577,6 +596,7 @@ card[data-selection]::after {
     background: black;
     border-radius: 100%;
     padding: 2px 2px;
+    font-family: "Helvetica", "LAH", sans-serif !important;
     font-size: 20pt;
     width: 1.2em;
     height: 1.2em;
@@ -602,16 +622,16 @@ card[data-selection]::after {
     padding: 8pt 25pt;
     background: #eee;
     border: 2px solid black;
-    border-width: 2px 2px 7px 2px;
+    /* border-width: 2px 2px 7px 2px; */
     border-radius: 6pt;
     font-size: 22pt;
     margin: 0 6pt;
 }
 
 .lah-btn-small {
-    font-size: 16pt;
+    font-size: 14pt;
     padding: 4pt 12pt;
-    border-bottom-width: 4px;
+    /* border-bottom-width: 4px; */
     margin: 0 4pt;
 }
 

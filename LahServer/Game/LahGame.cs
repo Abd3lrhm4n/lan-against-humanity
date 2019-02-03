@@ -46,6 +46,9 @@ namespace LahServer.Game
 		// All white cards in the game
 		private readonly HashList<WhiteCard> _whiteCards;
 
+		// All packs in the game
+		private readonly Pack[] _packs;
+
 		// All cards in the game
 		private readonly Dictionary<string, Card> _cards;
 
@@ -88,7 +91,7 @@ namespace LahServer.Game
 		// Raised when a round has ended
 		public event RoundEndedEventDelegate RoundEnded;
 
-		public LahGame(IEnumerable<Pack> decks, LahSettings settings)
+		public LahGame(IEnumerable<Pack> packs, LahSettings settings)
 		{
 			Settings = settings;
 			_whiteDrawPile = new HashList<WhiteCard>();
@@ -100,8 +103,10 @@ namespace LahServer.Game
 			_cards = new Dictionary<string, Card>();
 			_roundPlays = new HashList<(LahPlayer, WhiteCard[])>();
 
+			_packs = packs.ToArray();
+
 			// Combine decks and remove duplicates
-			foreach (var card in decks.SelectMany(d => d.GetAllCards()))
+			foreach (var card in packs.SelectMany(d => d.GetAllCards()))
 			{
 				if (!_cards.ContainsKey(card.ID))
 				{
@@ -287,6 +292,18 @@ namespace LahServer.Game
 			lock (_allPlayersSync)
 			{
 				return _players.ToArray();
+			}
+		}
+
+		/// <summary>
+		/// Enumerates all packs used in the game.
+		/// </summary>
+		/// <returns></returns>
+		public IEnumerable<Pack> GetPacks()
+		{
+			foreach(var p in _packs)
+			{
+				yield return p;
 			}
 		}
 

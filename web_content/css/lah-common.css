@@ -1,3 +1,35 @@
+@font-face {
+    font-family: "LAH";
+    src: url(/fonts/Roboto-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "LAH";
+    src: url(/fonts/Roboto-Medium.ttf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "LAH";
+    src: url(/fonts/Roboto-MediumItalic.ttf);
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "LAH";
+    src: url(/fonts/Roboto-Bold.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "LAH";
+    src: url(/fonts/Roboto-BoldItalic.ttf);
+    font-weight: 700;
+    font-style: italic;
+}
+
 :root {
     --placeholder-color: #999;
     --modal-nav-height: 24pt;
@@ -36,7 +68,7 @@
 }
 
 * {
-    font-family: "Helvetica", sans-serif !important;
+    font-family: "LAH", sans-serif !important;
     font-weight: 700;
 }
 
@@ -194,4 +226,64 @@ span.highlight {
 
 .fade {
     transition: opacity .3s, backdrop-filter .3s;
+}
+
+.ribbon[data-packaccent=red]:after {
+    background: #800;
+}
+
+.ribbon[data-packaccent=blue]:after {
+    background: #36a;
+}
+
+.ribbon[data-packaccent=green]:after {
+    background: #181;
+}
+
+.ribbon[data-packaccent=black]:after {
+    background: #000;   
+}
+
+card[black] .ribbon[data-packaccent=black]:after {
+    background: #555;
+}
+
+.ribbon[data-packaccent=purple]:after {
+    background: #606;
+}
+
+.ribbon[data-packaccent=poo]:after {
+    background: #650;
+}
+
+.ribbon[data-packaccent=brown]:after {
+    background: #420;
+}
+
+.ribbon[data-packaccent=limegreen]:after {
+    background: #0f0;
+    color: #000 !important;
+}
+
+.ribbon[data-packaccent=vs]:after {
+    background: #865FC5;
+    color: #fff !important;
+    font-family: "Segoe UI", "LAH", sans-serif !important;
+    font-weight: 600;
+}
+
+.ribbon[data-packaccent=rainbow]:after {
+    background: linear-gradient(to right, #f00, #f90, #ff0, #0f0, #0df, #00f, #f0f);
+    color: #000 !important;
+    background-size: 100%;
+}
+
+.ribbon[data-packaccent=rainbow]:not(:hover):after {
+    background-repeat: repeat-x;
+    background-size: 10%;
+}
+
+.ribbon[data-packaccent=white]:after {
+    background: #fff;
+    border: 2px solid black;
 }

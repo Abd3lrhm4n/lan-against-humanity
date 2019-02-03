@@ -22,6 +22,7 @@
 <body onload="lah.start()" class="preload">
     <nav id="navbar" class="mobile-hidden">
         <h1 class="mobile-only nav-header">Menu</h1>
+        <input type="button" value="About" id="btn-about" class="lah-btn lah-btn-small" onclick="showModal('modal-about')" />
         <input type="button" value="Options" id="btn-options" class="lah-btn lah-btn-small" onclick="showModal('modal-options')" />
         <input type="button" value="Players" id="btn-players" class="lah-btn lah-btn-small" onclick="togglePlayerList()" />
         <input type="button" value="Fullscreen" id="btn-fullscreen" class="lah-btn lah-btn-small" />
@@ -103,6 +104,26 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+    <div id="modal-about" class="modal hidden">
+        <div class="modal-dialog">
+            <div class="modal-nav">
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <h1>About</h1>
+                <p>This game is a clone of Cards Against Humanity.</p>
+                <p>
+                    The original game is available for download or purchase at <a href="https://cardsagainsthumanity.com" target="_blank">cardsagainsthumanity.com</a>, 
+                    and is generously distributed under a <a href="https://creativecommons.org/licenses/by-nc-sa/2.0/">CC BY-NC-SA 2.0 license</a>.
+                    This fan-made project is in no way endorsed, sponsored, or supported by Cards Against Humanity.
+                </p>
+                <p>
+                    Source code and license information, including licenses for third-party software used in this game,
+                    can be found on <a href="https://github.com/TheBerkin/lan-against-humanity" target="_blank">GitHub</a>.
+                </p>
             </div>
         </div>
     </div>

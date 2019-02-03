@@ -507,11 +507,13 @@
     card[black] {
         background-color: black;
         color: white;
+        font-weight: 200;
     }
     
     card[white] {
         background-color: #f6f6f6;
         color: black;
+        font-weight: 500;
     }
 
     card[data-card="blank"] > .blank-card-text-container {
@@ -529,6 +531,7 @@
     
     card[data-card="blank"] > .blank-card-text-container .blank-card-text {
         font-size: inherit !important;
+        font-weight: 500;
         line-height: inherit !important;
         resize: none;
         outline: none;
@@ -547,11 +550,11 @@
     }
     
     card[data-card="blank"] .blank-card-text, card[data-card^="custom:"] {
-        font-family: "Comic Sans MS", "Helvetica", sans-serif !important;
+        font-family: "Comic Sans MS", inherit, sans-serif !important;
     }
     
     card[data-card="blank"] .blank-card-text::placeholder {
-        font-family: "Helvetica", sans-serif;
+        font-family: "LAH", sans-serif;
     }
     
     *:not(.disabled) card[white].user:active, #hand-area:not(.disabled) card[white]:active, .selecting card[white]:active {
@@ -618,7 +621,7 @@
         padding: 8pt 25pt;
         background: #eee;
         border: 2px solid black;
-        border-width: 2px 2px 7px 2px;
+        /* border-width: 2px 2px 7px 2px; */
         border-radius: 6pt;
         font-size: 22pt;
     }
@@ -626,7 +629,7 @@
     .lah-btn-small {
         font-size: 16pt;
         padding: 4pt 12pt;
-        border-bottom-width: 4px;
+        /* border-bottom-width: 4px; */
     }
     
     .lah-btn:not(.disabled):hover {

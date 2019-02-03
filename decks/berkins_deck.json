@@ -1,6 +1,7 @@
 {
     "id": "berkins_deck",
     "name": "Berkin's Big Deck",
+    "accent": "purple",
     "author": "Nicholas Fleck, Matthew Farstad, Jessica Fleck",
     "cards": [
         {
@@ -2062,7 +2063,7 @@
             "id": "b_badaltegg",
             "content": {
                 "en-US": "It might sound like a good idea, but I can tell you from experience that _______ makes a <i>terrible</i> egg substitute.",
-                "de-DE": "Es klingt vielleicht nach einer guten Idee, aber ich kann dir aus Erfahrung sagen, dass _______ einen <i>furchtbaren</i> Eiersatz macht."
+                "de-DE": "Es klingt vielleicht wie eine gute Idee, aber ich kann dir aus Erfahrung sagen, dass _______ einen <i>furchtbaren</i> Eiersatz macht."
             }
         },
         {

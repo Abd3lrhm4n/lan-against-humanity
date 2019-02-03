@@ -1,10 +1,11 @@
 (() => {
     class Card {
-        constructor(type, id, content, blanks) {
+        constructor(type, id, content, blanks, pack) {
             this._id = id;
             this._content = content;
             this._type = type;
             this._blanks = blanks;
+            this._pack = pack;
         }
 
         get id() {
@@ -17,6 +18,10 @@
 
         get blanks() {
             return this._blanks;
+        }
+
+        get pack() {
+            return this._pack;
         }
 
         getContent(langCode) {
@@ -36,7 +41,8 @@
                 json["id"].startsWith("b_") ? "black" : "white",
                 json["id"],
                 json["content"],
-                json["blanks"] || 1
+                json["blanks"] || 1,
+                json["pack"] || ""
             );
         }
     }
@@ -61,6 +67,7 @@
     lah.round = 0;
     lah.whiteCards = {};
     lah.blackCards = {};
+    lah.packMetadata = {};
     lah.playerHand = []; // Card[] - Array of current cards in hand
     lah.playerHandSelection = []; // [{blankIndex:number, id:string}] - Array of client's currently selected cards
     lah.clientPlayedCards = []; // string[] - Array of client's currently played card IDs
@@ -109,10 +116,20 @@
     // Make an HTMLElement from the specified Card object
     function makeCardElement(card) {
         let el = document.createElement("card");
-        let logo = document.createElement("div");
-        logo.classList.add("logo");
-        logo.setAttribute("area-hidden", "true");
+        let packInfo = lah.packMetadata[card.pack];
+        el.setAttribute("data-card", card.id);
+        el.setAttribute(card.type, "");
+        
+        // Pack info ribbon
+        let ribbon = document.createElement("div");
+        ribbon.classList.add("ribbon");
+        ribbon.setAttribute("data-packname", (packInfo && packInfo.name) || "");
+        ribbon.setAttribute("data-packaccent", (packInfo && packInfo.accent) || "black");
+
+        // Card text
         el.innerHTML = createContentHtml(card.getLocalContent());
+
+        el.appendChild(ribbon);
 
         // Add pick # if applicable
         if (card.blanks > 1) {
@@ -124,10 +141,7 @@
             divPick.appendChild(spanPickNum);
             el.appendChild(divPick);
         }
-
-        el.appendChild(logo);
-        el.setAttribute("data-card", card.id);
-        el.setAttribute(card.type, "");
+        
         return el;
     }
 
@@ -183,12 +197,22 @@
         "s_allcards": msg => {
             clearObject(lah.whiteCards);
             clearObject(lah.blackCards);
-            msg.white.forEach(cardData => {
-                lah.whiteCards[cardData.id] = Card.fromObject(cardData);
-            });
-
-            msg.black.forEach(cardData => {
-                lah.blackCards[cardData.id] = Card.fromObject(cardData);
+            clearObject(lah.packMetadata);
+            msg.packs.forEach(packData => {
+                lah.packMetadata[packData.id] = {
+                    id: packData.id,
+                    name: packData.name,
+                    accent: packData.accent || "black"
+                };
+                packData.cards.forEach(cardData => {
+                    cardData.pack = packData.id;
+                    let card = Card.fromObject(cardData);
+                    if (cardData.id.startsWith("b_")) {
+                        lah.blackCards[cardData.id] = card;
+                    } else {
+                        lah.whiteCards[cardData.id] = card;
+                    }
+                });
             });
         },
         "s_gamestate": msg => {

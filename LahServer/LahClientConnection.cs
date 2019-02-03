@@ -405,8 +405,7 @@ namespace LahServer
 			var response = new
 			{
 				msg = "s_allcards",
-				white = Game.GetWhiteCards(),
-				black = Game.GetBlackCards()
+				packs = Game.GetPacks()
 			};
 			SendMessageObject(response);
 		}

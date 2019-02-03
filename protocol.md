@@ -79,23 +79,20 @@ The server sends this to a client in response to a `c_getallcards` message. It c
 ```json
 {
     "msg": "s_allcards",
-    "white": [
+    "packs": [
         {
-            "id": "w_example",
-            "content": {
-                "en-US": "An example card.",
-                "de-DE": "Eine Beispielkarte."
-            }
-        }
-    ],
-    "black": [
-        {
-            "id": "b_example",
-            "content": {
-                "en-US": "Nothing is worse than finding ______ in your mailbox.",
-                "de-DE": "Nichts ist schlimmer, als ______ im Briefkasten zu entdecken."
-            },
-            "blanks": 1
+            "id": "berkins_deck",
+            "name": "Berkin's Big Deck",
+            "accent": "red",
+            "cards": [
+                {
+                    "id": "w_example",
+                    "content": {
+                        "en-US": "An example card.",
+                        "de-DE": "Eine Beispielkarte."
+                    }
+                }
+            ]
         }
     ]
 }
